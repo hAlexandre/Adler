@@ -1,0 +1,17 @@
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\bin\Release\ProjetoV1.exe.manifest
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\bin\Release\ProjetoV1.xbap
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\bin\Release\ProjetoV1.exe
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\bin\Release\ProjetoV1.xml
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\Page1.baml
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\Page1.g.vb
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\Application.g.vb
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ProjetoV1_MarkupCompile.cache
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ProjetoV1.g.resources
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ProjetoV1.Resources.resources
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ProjetoV1.vbproj.GenerateResource.Cache
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ProjetoV1.TrustInfo.xml
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ProjetoV1.exe.manifest
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ProjetoV1.xbap
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ProjetoV1.exe
+C:\Users\Alexandre Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\ProjetoV1\ProjetoV1\obj\Release\ProjetoV1.xml

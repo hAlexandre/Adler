@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ProjetoV1
+</name>
+</assembly>
+<members>
+<member name="M:ProjetoV1.Application.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:ProjetoV1.Application.Main">
+	<summary>
+Application Entry Point.
+</summary>
+</member><member name="T:ProjetoV1.Application">
+	<summary>
+Application
+</summary>
+</member><member name="M:ProjetoV1.Page1.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:ProjetoV1.Page1">
+	<summary>
+Page1
+</summary>
+</member>
+</members>
+</doc>
