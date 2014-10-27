@@ -40,11 +40,14 @@ if   dtmusuario.ADOTable1.Locate('usuario', Edit1.Text, [loCaseInsensitive ]) an
   dtmusuario.ADOTable1.Close;
   Form2.Show;
   Self.Hide;
+  Edit2.Text:='';
+  Edit1.Text:='';
   end
 
 else
   begin
-    ShowMessage('Usuario ou senha invalidos');
+    ShowMessage('Combinação inválida de usuario e senha');
+    Edit2.Text:=''
   end;
 
 
