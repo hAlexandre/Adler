@@ -1,9 +1,9 @@
-object Form2: TForm2
-  Left = 290
-  Top = 142
-  Width = 1076
-  Height = 565
-  Caption = 'Form2'
+object Form_alterajogo: TForm_alterajogo
+  Left = 394
+  Top = 211
+  Width = 1044
+  Height = 540
+  Caption = 'Form_alterajogo'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,25 +12,38 @@ object Form2: TForm2
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
-  OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 13
   object Button1: TButton
-    Left = 896
-    Top = 456
-    Width = 129
-    Height = 41
-    Caption = 'Voltar '#224' tela de login'
+    Left = 8
+    Top = 152
+    Width = 105
+    Height = 57
+    Caption = 'Pesquisar por nome'
     TabOrder = 0
     OnClick = Button1Click
   end
+  object Edit1: TEdit
+    Left = 8
+    Top = 88
+    Width = 225
+    Height = 21
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 8
+    Top = 216
+    Width = 105
+    Height = 65
+    Caption = 'Pesquisar por x'
+    TabOrder = 3
+  end
   object DBGrid1: TDBGrid
-    Left = 144
-    Top = 56
-    Width = 585
-    Height = 201
-    DataSource = dtmusuario.DataSource1
-    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgConfirmDelete, dgCancelOnExit]
+    Left = 480
+    Top = 200
+    Width = 329
+    Height = 153
+    DataSource = DataSource1
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -56,11 +69,9 @@ object Form2: TForm2
       Caption = 'Jogo'
       object Inserirjogo1: TMenuItem
         Caption = 'Inserir jogo'
-        OnClick = Inserirjogo1Click
       end
       object Alterarjogo1: TMenuItem
         Caption = 'Alterar jogo'
-        OnClick = Alterarjogo1Click
       end
       object Removerjogo1: TMenuItem
         Caption = 'Remover jogo'
@@ -78,5 +89,21 @@ object Form2: TForm2
         Caption = 'Remover Funcion'#225'rio'
       end
     end
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = datamodulejogos.ADOConnection1
+    CursorType = ctStatic
+    DataSource = datamodulejogos.DataSource1
+    Parameters = <>
+    SQL.Strings = (
+      'Select * from Jogo')
+    Left = 136
+    Top = 160
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 312
+    Top = 16
   end
 end

@@ -57,21 +57,21 @@ object Form3: TForm3
     Left = 280
     Top = 96
     Width = 225
-    Height = 25
+    Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 280
     Top = 128
     Width = 433
-    Height = 25
+    Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
     Left = 280
     Top = 160
     Width = 121
-    Height = 25
+    Height = 21
     TabOrder = 2
   end
   object Button1: TButton

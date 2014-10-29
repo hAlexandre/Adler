@@ -1,14 +1,13 @@
-unit Unit2;
+unit Form_alterarjogo;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Menus, Grids, DBGrids;
+  Dialogs, Menus, StdCtrls, DB, ADODB, Grids, DBGrids;
 
 type
-  TForm2 = class(TForm)
-    Button1: TButton;
+  TForm_alterajogo = class(TForm)
     MainMenu1: TMainMenu;
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
@@ -22,11 +21,13 @@ type
     InserirFuncionrio1: TMenuItem;
     AlterarFuncionrio1: TMenuItem;
     RemoverFuncionrio1: TMenuItem;
+    Button1: TButton;
+    Edit1: TEdit;
+    Button2: TButton;
     DBGrid1: TDBGrid;
-    procedure FormActivate(Sender: TObject);
-    procedure Inserirjogo1Click(Sender: TObject);
+    ADOQuery1: TADOQuery;
+    DataSource1: TDataSource;
     procedure Button1Click(Sender: TObject);
-    procedure Alterarjogo1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,35 +35,21 @@ type
   end;
 
 var
-  Form2: TForm2;
+  Form_alterajogo: TForm_alterajogo;
 
 implementation
 
-uses Unit1, Unit3, Form_alterarjogo, datamodule_usuarios;
+uses datamodule_jogos;
 
 {$R *.dfm}
 
-procedure TForm2.FormActivate(Sender: TObject);
+procedure TForm_alterajogo.Button1Click(Sender: TObject);
 begin
-Form1.Hide;
-end;
-
-procedure TForm2.Inserirjogo1Click(Sender: TObject);
-begin
-  Self.Hide;
-  Form3.Show;
-end;
-
-procedure TForm2.Button1Click(Sender: TObject);
-begin
-  Self.hide;
-  Form1.Show;
-end;
-
-procedure TForm2.Alterarjogo1Click(Sender: TObject);
-begin
-  Self.hide;
-  Form_alterajogo.Show;
+                 ADOQuery1.Close; {Fecha a query}
+                 ADOQuery1.SQL.Clear; {Limpa o conteúdo da propriedade SQL}
+                 ADOQuery1.SQL.Add('SELECT * from Jogo');
+                 ADOQuery1.SQL.Add('where Nome like'+#39+Edit1.text+'%'+#39);
+                 ADOQuery1.Open ;
 end;
 
 end.
