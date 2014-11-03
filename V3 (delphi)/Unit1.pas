@@ -9,10 +9,10 @@ uses
 type
   TForm1 = class(TForm)
     Button1: TButton;
-    Label1: TLabel;
     Label2: TLabel;
     Edit1: TEdit;
     Edit2: TEdit;
+    Label1: TLabel;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }

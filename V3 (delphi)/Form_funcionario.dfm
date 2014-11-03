@@ -1,9 +1,9 @@
-object Form2: TForm2
-  Left = 288
-  Top = 253
-  Width = 1076
-  Height = 436
-  Caption = 'Form2'
+object Formusuario: TFormusuario
+  Left = 367
+  Top = 257
+  Width = 1044
+  Height = 540
+  Caption = 'Formusuario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,8 +12,6 @@ object Form2: TForm2
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
-  WindowState = wsMaximized
-  OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 13
   object MainMenu1: TMainMenu
@@ -34,7 +32,6 @@ object Form2: TForm2
       Caption = 'Jogo'
       object Inserirjogo1: TMenuItem
         Caption = 'Inserir jogo'
-        OnClick = Inserirjogo1Click
       end
       object Alterarjogo1: TMenuItem
         Caption = 'Alterar jogo'
@@ -58,7 +55,6 @@ object Form2: TForm2
     end
     object eladelogin1: TMenuItem
       Caption = 'Tela de login'
-      OnClick = eladelogin1Click
     end
   end
 end

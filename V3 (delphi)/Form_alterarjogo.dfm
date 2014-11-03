@@ -1,8 +1,8 @@
 object Form_alterajogo: TForm_alterajogo
-  Left = 394
-  Top = 211
+  Left = 311
+  Top = 195
   Width = 1044
-  Height = 540
+  Height = 541
   Caption = 'Form_alterajogo'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -12,6 +12,8 @@ object Form_alterajogo: TForm_alterajogo
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
+  WindowState = wsMaximized
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object Button1: TButton
@@ -44,12 +46,72 @@ object Form_alterajogo: TForm_alterajogo
     Width = 329
     Height = 153
     DataSource = DataSource1
+    Enabled = False
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete]
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'Nome'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Preco'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Descricao'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Desenvolvedor'
+        Visible = True
+      end>
+  end
+  object Button3: TButton
+    Left = 480
+    Top = 360
+    Width = 113
+    Height = 33
+    Caption = 'Alterar registro'
+    TabOrder = 4
+    OnClick = Button3Click
+  end
+  object Edit2: TEdit
+    Left = 376
+    Top = 88
+    Width = 121
+    Height = 21
+    TabOrder = 5
+    Visible = False
+  end
+  object Button4: TButton
+    Left = 552
+    Top = 376
+    Width = 121
+    Height = 41
+    Caption = 'Descartar altera'#231#245'es'
+    TabOrder = 6
+    Visible = False
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 400
+    Top = 376
+    Width = 121
+    Height = 41
+    Caption = 'Salvar altera'#231#245'es'
+    TabOrder = 7
+    Visible = False
+    OnClick = Button5Click
   end
   object MainMenu1: TMainMenu
     Top = 65528
@@ -89,9 +151,12 @@ object Form_alterajogo: TForm_alterajogo
         Caption = 'Remover Funcion'#225'rio'
       end
     end
+    object eladelogin1: TMenuItem
+      Caption = 'Tela de login'
+      OnClick = eladelogin1Click
+    end
   end
   object ADOQuery1: TADOQuery
-    Active = True
     Connection = datamodulejogos.ADOConnection1
     CursorType = ctStatic
     DataSource = datamodulejogos.DataSource1
@@ -103,7 +168,7 @@ object Form_alterajogo: TForm_alterajogo
   end
   object DataSource1: TDataSource
     DataSet = ADOQuery1
-    Left = 312
-    Top = 16
+    Left = 592
+    Top = 312
   end
 end

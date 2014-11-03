@@ -13,6 +13,8 @@ type
     ADOTable1Nome: TWideStringField;
     ADOTable1Preco: TIntegerField;
     ADOTable1Descricao: TWideStringField;
+    ADOTable1Desenvolvedor: TWideStringField;
+    ADOTable1Codigo: TAutoIncField;
   private
     { Private declarations }
   public

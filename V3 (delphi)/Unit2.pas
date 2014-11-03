@@ -8,7 +8,6 @@ uses
 
 type
   TForm2 = class(TForm)
-    Button1: TButton;
     MainMenu1: TMainMenu;
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
@@ -22,11 +21,12 @@ type
     InserirFuncionrio1: TMenuItem;
     AlterarFuncionrio1: TMenuItem;
     RemoverFuncionrio1: TMenuItem;
-    DBGrid1: TDBGrid;
+    eladelogin1: TMenuItem;
     procedure FormActivate(Sender: TObject);
     procedure Inserirjogo1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Alterarjogo1Click(Sender: TObject);
+    procedure eladelogin1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -63,6 +63,12 @@ procedure TForm2.Alterarjogo1Click(Sender: TObject);
 begin
   Self.hide;
   Form_alterajogo.Show;
+end;
+
+procedure TForm2.eladelogin1Click(Sender: TObject);
+begin
+Self.Hide;
+Form1.Show;
 end;
 
 end.

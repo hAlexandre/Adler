@@ -2,7 +2,7 @@ object datamodulejogos: Tdatamodulejogos
   OldCreateOrder = False
   Left = 1224
   Top = 169
-  Height = 145
+  Height = 146
   Width = 299
   object ADOConnection1: TADOConnection
     Connected = True
@@ -33,6 +33,14 @@ object datamodulejogos: Tdatamodulejogos
     end
     object ADOTable1Preco: TIntegerField
       FieldName = 'Preco'
+    end
+    object ADOTable1Desenvolvedor: TWideStringField
+      FieldName = 'Desenvolvedor'
+      Size = 255
+    end
+    object ADOTable1Codigo: TAutoIncField
+      FieldName = 'Codigo'
+      ReadOnly = True
     end
   end
   object DataSource1: TDataSource

@@ -29,8 +29,10 @@ type
     Label3: TLabel;
     Button1: TButton;
     Button2: TButton;
+    eladeLogin1: TMenuItem;
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure eladeLogin1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -65,6 +67,12 @@ begin
       datamodulejogos.ADOTable1.FieldByName('Preco').Value:=StrToFloat(edit3.Text);
 
   datamodulejogos.ADOTable1.Post;
+end;
+
+procedure TForm3.eladeLogin1Click(Sender: TObject);
+begin
+Self.Hide;
+Form1.Show;
 end;
 
 end.

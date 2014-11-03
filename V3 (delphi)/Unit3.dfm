@@ -1,8 +1,8 @@
 object Form3: TForm3
-  Left = 132
-  Top = 107
-  Width = 1044
-  Height = 540
+  Left = 288
+  Top = 109
+  Width = 1043
+  Height = 744
   Caption = 'Form3'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -12,6 +12,7 @@ object Form3: TForm3
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
+  WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -129,6 +130,10 @@ object Form3: TForm3
       object RemoverFuncionrio1: TMenuItem
         Caption = 'Remover Funcion'#225'rio'
       end
+    end
+    object eladeLogin1: TMenuItem
+      Caption = 'Tela de Login'
+      OnClick = eladeLogin1Click
     end
   end
 end
