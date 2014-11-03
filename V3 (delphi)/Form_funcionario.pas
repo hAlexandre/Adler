@@ -22,7 +22,6 @@ type
     AlterarFuncionrio1: TMenuItem;
     RemoverFuncionrio1: TMenuItem;
     eladelogin1: TMenuItem;
-    procedure Alterarjogo1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,10 +34,5 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TFormusuario.Alterarjogo1Click(Sender: TObject);
-begin
-    ADOQuery1.Refresh;
-end;
 
 end.

@@ -7,13 +7,13 @@ object Formusuario: TFormusuario
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object MainMenu1: TMainMenu
     Top = 65528
     object Usuario1: TMenuItem
@@ -35,7 +35,6 @@ object Formusuario: TFormusuario
       end
       object Alterarjogo1: TMenuItem
         Caption = 'Alterar jogo'
-        OnClick = Alterarjogo1Click
       end
       object Removerjogo1: TMenuItem
         Caption = 'Remover jogo'

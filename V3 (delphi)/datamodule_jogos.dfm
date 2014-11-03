@@ -5,11 +5,9 @@ object datamodulejogos: Tdatamodulejogos
   Height = 146
   Width = 299
   object ADOConnection1: TADOConnection
-    Connected = True
     ConnectionString = 
-      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Alexandre ' +
-      'Azevedo\Desktop\Adler\Projeto\Projeto Adler\Adler\V3 (delphi)\Jo' +
-      'gos.mdb;Persist Security Info=False'
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Adler\V3 (delphi' +
+      ')\Jogos.mdb;Persist Security Info=False'
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
@@ -17,7 +15,6 @@ object datamodulejogos: Tdatamodulejogos
     Top = 30
   end
   object ADOTable1: TADOTable
-    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'Jogo'
