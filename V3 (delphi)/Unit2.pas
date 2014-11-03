@@ -27,6 +27,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Alterarjogo1Click(Sender: TObject);
     procedure eladelogin1Click(Sender: TObject);
+    procedure Inserirusurio1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,7 +39,7 @@ var
 
 implementation
 
-uses Unit1, Unit3, Form_alterarjogo, datamodule_usuarios;
+uses Unit1, Unit3, Form_alterarjogo, datamodule_usuarios, Form_usuario;
 
 {$R *.dfm}
 
@@ -50,6 +51,7 @@ end;
 procedure TForm2.Inserirjogo1Click(Sender: TObject);
 begin
   Self.Hide;
+  Form3:=TForm3.Create(Application);
   Form3.Show;
 end;
 
@@ -61,14 +63,21 @@ end;
 
 procedure TForm2.Alterarjogo1Click(Sender: TObject);
 begin
-  Self.hide;
-  Form_alterajogo.Show;
+Form2:=TForm2.Create(Application);
+Form2.show;
 end;
 
 procedure TForm2.eladelogin1Click(Sender: TObject);
 begin
 Self.Hide;
 Form1.Show;
+end;
+
+procedure TForm2.Inserirusurio1Click(Sender: TObject);
+begin
+      Formusuario_:=TFormusuario_.Create(Application);
+      Formusuario_.Show;
+      Self.Hide;
 end;
 
 end.

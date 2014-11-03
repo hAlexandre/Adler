@@ -7,7 +7,7 @@ uses
   Dialogs, Menus;
 
 type
-  TFormusuario = class(TForm)
+  TFFormusuario = class(TForm)
     MainMenu1: TMainMenu;
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
@@ -29,7 +29,7 @@ type
   end;
 
 var
-  Formusuario: TFormusuario;
+  FFormusuario: TFFormusuario;
 
 implementation
 

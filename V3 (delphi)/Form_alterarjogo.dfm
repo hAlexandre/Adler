@@ -1,6 +1,6 @@
 object Form_alterajogo: TForm_alterajogo
-  Left = 311
-  Top = 195
+  Left = 279
+  Top = 93
   Width = 1044
   Height = 541
   Caption = 'Form_alterajogo'

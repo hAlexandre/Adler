@@ -8,7 +8,8 @@ uses
   Unit3 in 'Unit3.pas' {Form3},
   datamodule_jogos in 'datamodule_jogos.pas' {datamodulejogos: TDataModule},
   Form_alterarjogo in 'Form_alterarjogo.pas' {Form_alterajogo},
-  Form_funcionario in 'Form_funcionario.pas' {Formusuario};
+  Form_funcionario in 'Form_funcionario.pas' {FFormusuario},
+  Form_usuario in 'Form_usuario.pas' {Formusuario_};
 
 {$R *.res}
 
@@ -17,9 +18,8 @@ begin
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(Tdtmusuario, dtmusuario);
   Application.CreateForm(TForm2, Form2);
-  Application.CreateForm(TForm3, Form3);
   Application.CreateForm(Tdatamodulejogos, datamodulejogos);
-  Application.CreateForm(TForm_alterajogo, Form_alterajogo);
-  Application.CreateForm(TFormusuario, Formusuario);
+  Application.CreateForm(TFFormusuario, FFormusuario);
+  Application.CreateForm(TFormusuario_, Formusuario_);
   Application.Run;
 end.

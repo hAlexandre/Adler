@@ -10,6 +10,9 @@ type
     ADOConnection1: TADOConnection;
     ADOTable1: TADOTable;
     DataSource1: TDataSource;
+    ADOTable1Cdigo: TAutoIncField;
+    ADOTable1usuario: TWideStringField;
+    ADOTable1senha: TWideStringField;
   private
     { Private declarations }
   public

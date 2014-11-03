@@ -77,9 +77,9 @@ object Form3: TForm3
   end
   object Button1: TButton
     Left = 312
-    Top = 216
+    Top = 224
     Width = 89
-    Height = 33
+    Height = 25
     Caption = 'Inserir'
     TabOrder = 3
     OnClick = Button1Click

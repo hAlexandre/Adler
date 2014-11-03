@@ -1,19 +1,19 @@
-object Formusuario: TFormusuario
+object FFormusuario: TFFormusuario
   Left = 367
   Top = 257
   Width = 1044
   Height = 540
-  Caption = 'Formusuario'
+  Caption = 'FFormusuario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -14
+  Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
-  PixelsPerInch = 120
-  TextHeight = 17
+  PixelsPerInch = 96
+  TextHeight = 13
   object MainMenu1: TMainMenu
     Top = 65528
     object Usuario1: TMenuItem

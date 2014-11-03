@@ -1,10 +1,11 @@
 object datamodulejogos: Tdatamodulejogos
   OldCreateOrder = False
-  Left = 1224
-  Top = 169
+  Left = 998
+  Top = 235
   Height = 146
   Width = 299
   object ADOConnection1: TADOConnection
+    Connected = True
     ConnectionString = 
       'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Adler\V3 (delphi' +
       ')\Jogos.mdb;Persist Security Info=False'

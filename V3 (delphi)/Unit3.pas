@@ -65,8 +65,11 @@ begin
       datamodulejogos.ADOTable1.FieldByName('Nome').Value:=edit1.Text;
       datamodulejogos.ADOTable1.FieldByName('Descricao').Value:=edit2.Text;
       datamodulejogos.ADOTable1.FieldByName('Preco').Value:=StrToFloat(edit3.Text);
-
   datamodulejogos.ADOTable1.Post;
+  ShowMessage('Jogo inserido com sucesso');
+  Self.Destroy;
+  Form2.show;
+
 end;
 
 procedure TForm3.eladeLogin1Click(Sender: TObject);
