@@ -12,11 +12,9 @@ type
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
     AlterarUsurio1: TMenuItem;
-    Removerusuario1: TMenuItem;
     Jogo1: TMenuItem;
     Inserirjogo1: TMenuItem;
     Alterarjogo1: TMenuItem;
-    Removerjogo1: TMenuItem;
     Funcionrio1: TMenuItem;
     InserirFuncionrio1: TMenuItem;
     AlterarFuncionrio1: TMenuItem;
@@ -28,6 +26,7 @@ type
     procedure Alterarjogo1Click(Sender: TObject);
     procedure eladelogin1Click(Sender: TObject);
     procedure Inserirusurio1Click(Sender: TObject);
+    procedure AlterarUsurio1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,7 +38,9 @@ var
 
 implementation
 
-uses Unit1, Unit3, Form_alterarjogo, datamodule_usuarios, Form_usuario;
+uses Unit1, Unit3, Form_alterarjogo, datamodule_usuarios, Form_usuario,
+  Form_alterarusuario, Alterar__usuario, datamodule_jogos,
+  Form_funcionario;
 
 {$R *.dfm}
 
@@ -63,8 +64,9 @@ end;
 
 procedure TForm2.Alterarjogo1Click(Sender: TObject);
 begin
-Form2:=TForm2.Create(Application);
-Form2.show;
+Form_alterajogo:=TForm_alterajogo.Create(Application);
+Form_alterajogo.DBGrid1.refresh;
+Form_alterajogo.Show;
 end;
 
 procedure TForm2.eladelogin1Click(Sender: TObject);
@@ -78,6 +80,16 @@ begin
       Formusuario_:=TFormusuario_.Create(Application);
       Formusuario_.Show;
       Self.Hide;
+end;
+
+procedure TForm2.AlterarUsurio1Click(Sender: TObject);
+begin
+Self.Hide;
+formAlter_Usuario:=TformAlter_Usuario.Create(Application);
+formAlter_Usuario.show;
+formAlter_Usuario.DBGrid1.Enabled:=True;
+formAlter_Usuario.DBGrid1.Refresh;
+
 end;
 
 end.

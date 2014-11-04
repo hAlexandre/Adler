@@ -32,12 +32,14 @@ type
     Button4: TButton;
     Button5: TButton;
     eladelogin1: TMenuItem;
+    Button6: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure eladelogin1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -97,8 +99,8 @@ end;
 procedure TForm_alterajogo.Button5Click(Sender: TObject);
 begin
   ADOQuery1.refresh;
-  aux := DBGrid1.DataSource.DataSet.FieldValues['Codigo'];
-  if datamodulejogos.ADOTable1.Locate('Codigo',aux,[])    then
+  aux := DBGrid1.DataSource.DataSet.FieldValues['codigo'];
+  if datamodulejogos.ADOTable1.Locate('codigo',aux,[])    then
     begin
       datamodulejogos.ADOTable1.Open;
       datamodulejogos.ADOTable1.Edit;
@@ -127,6 +129,18 @@ procedure TForm_alterajogo.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
 Self.Destroy;
+end;
+
+procedure TForm_alterajogo.Button6Click(Sender: TObject);
+begin
+datamodulejogos.ADOTable1.open ;
+       aux := DBGrid1.DataSource.DataSet.FieldValues['codigo'];
+       if datamodulejogos.ADOTable1.Locate('codigo',aux,[])    then
+       begin
+        DBGrid1.DataSource.DataSet.Delete;
+
+
+       end;
 end;
 
 end.

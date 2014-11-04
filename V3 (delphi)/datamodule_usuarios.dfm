@@ -29,10 +29,6 @@ object dtmusuario: Tdtmusuario
     TableName = 'Usuariodesistema'
     Left = 120
     Top = 24
-    object ADOTable1Cdigo: TAutoIncField
-      FieldName = 'C'#243'digo'
-      ReadOnly = True
-    end
     object ADOTable1usuario: TWideStringField
       FieldName = 'usuario'
       Size = 255
@@ -40,6 +36,10 @@ object dtmusuario: Tdtmusuario
     object ADOTable1senha: TWideStringField
       FieldName = 'senha'
       Size = 255
+    end
+    object ADOTable1Codigo: TAutoIncField
+      FieldName = 'Codigo'
+      ReadOnly = True
     end
   end
   object DataSource1: TDataSource

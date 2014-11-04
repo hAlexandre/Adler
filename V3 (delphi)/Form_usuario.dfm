@@ -45,14 +45,14 @@ object Formusuario_: TFormusuario_
     Left = 176
     Top = 56
     Width = 137
-    Height = 25
+    Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 176
     Top = 88
     Width = 137
-    Height = 25
+    Height = 21
     TabOrder = 1
   end
   object Button1: TButton

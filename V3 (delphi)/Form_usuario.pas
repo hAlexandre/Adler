@@ -63,7 +63,7 @@ begin
   ShowMessage('Usuário inserido com sucesso');
   Self.Destroy;
   Form2.show;
-ShowMessage('Usuário inserido com sucesso');
+
 end;
 
 procedure TFormusuario_.Button2Click(Sender: TObject);

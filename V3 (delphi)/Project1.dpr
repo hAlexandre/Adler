@@ -9,7 +9,9 @@ uses
   datamodule_jogos in 'datamodule_jogos.pas' {datamodulejogos: TDataModule},
   Form_alterarjogo in 'Form_alterarjogo.pas' {Form_alterajogo},
   Form_funcionario in 'Form_funcionario.pas' {FFormusuario},
-  Form_usuario in 'Form_usuario.pas' {Formusuario_};
+  Form_usuario in 'Form_usuario.pas' {Formusuario_},
+  Form_alterarusuario in 'Form_alterarusuario.pas' {Alterausuario},
+  Alterar__usuario in 'Alterar__usuario.pas' {formAlter_Usuario};
 
 {$R *.res}
 
@@ -21,5 +23,6 @@ begin
   Application.CreateForm(Tdatamodulejogos, datamodulejogos);
   Application.CreateForm(TFFormusuario, FFormusuario);
   Application.CreateForm(TFormusuario_, Formusuario_);
+  Application.CreateForm(TformAlter_Usuario, formAlter_Usuario);
   Application.Run;
 end.
