@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Grids, DBGrids, DB, ADODB, ExtCtrls, DBCtrls;
+  Dialogs, StdCtrls, Grids, DBGrids, DB, ADODB, ExtCtrls, DBCtrls, jpeg;
 
 type
   TForm1 = class(TForm)
@@ -13,7 +13,10 @@ type
     Edit1: TEdit;
     Edit2: TEdit;
     Label1: TLabel;
+    Image1: TImage;
+    Label3: TLabel;
     procedure Button1Click(Sender: TObject);
+    procedure Edit2KeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -52,6 +55,14 @@ else
 
 
 
+end;
+
+procedure TForm1.Edit2KeyPress(Sender: TObject; var Key: Char);
+begin
+  if (key = #13) then
+  begin
+  button1.Click;
+  end;
 end;
 
 end.
