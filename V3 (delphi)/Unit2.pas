@@ -72,8 +72,8 @@ end;
 
 procedure TForm2.eladelogin1Click(Sender: TObject);
 begin
-Self.Destroy;
-Form1.ShowModal;
+Self.Hide;
+Form1.Show;
 end;
 
 procedure TForm2.Inserirusurio1Click(Sender: TObject);

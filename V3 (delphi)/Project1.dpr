@@ -19,6 +19,7 @@ begin
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(Tdtmusuario, dtmusuario);
+  Application.CreateForm(TForm2, Form2);
   Application.CreateForm(Tdatamodulejogos, datamodulejogos);
   Application.CreateForm(TFFormusuario, FFormusuario);
   Application.CreateForm(TFormusuario_, Formusuario_);

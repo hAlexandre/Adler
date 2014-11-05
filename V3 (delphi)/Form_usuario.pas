@@ -68,8 +68,8 @@ end;
 
 procedure TFormusuario_.Button2Click(Sender: TObject);
 begin
-Self.Destroy;
-Form2.Show;
+Edit2.Text:='';
+Edit1.text:='';
 end;
 
 end.
