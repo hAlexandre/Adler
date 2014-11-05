@@ -40,6 +40,7 @@ type
     procedure eladelogin1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Button6Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -160,6 +161,12 @@ begin
 
 
 
+end;
+
+procedure TForm_alterajogo.Button2Click(Sender: TObject);
+begin
+Self.Destroy;
+Form2.Show;
 end;
 
 end.

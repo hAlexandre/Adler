@@ -69,7 +69,7 @@ object Formusuario_: TFormusuario_
     Top = 160
     Width = 75
     Height = 25
-    Caption = 'Descartar'
+    Caption = 'Cancelar'
     TabOrder = 3
     OnClick = Button2Click
   end

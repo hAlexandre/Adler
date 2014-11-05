@@ -116,6 +116,15 @@ object formAlter_Usuario: TformAlter_Usuario
     TabOrder = 7
     OnClick = Button5Click
   end
+  object Button6: TButton
+    Left = 8
+    Top = 200
+    Width = 105
+    Height = 49
+    Caption = 'Cancelar'
+    TabOrder = 8
+    OnClick = Button6Click
+  end
   object MainMenu1: TMainMenu
     Top = 65528
     object Usuario1: TMenuItem
@@ -150,6 +159,7 @@ object formAlter_Usuario: TformAlter_Usuario
     end
     object eladelogin1: TMenuItem
       Caption = 'Tela de login'
+      OnClick = eladelogin1Click
     end
   end
   object ADOQuery1: TADOQuery

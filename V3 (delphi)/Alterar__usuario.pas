@@ -31,12 +31,15 @@ type
     Button4: TButton;
     Label1: TLabel;
     Button5: TButton;
+    Button6: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure eladelogin1Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -150,6 +153,19 @@ procedure TformAlter_Usuario.FormClose(Sender: TObject;
 begin
 Self.Destroy;
 Form2.show;
+end;
+
+procedure TformAlter_Usuario.eladelogin1Click(Sender: TObject);
+begin
+Self.Destroy;
+self.Hide;
+
+end;
+
+procedure TformAlter_Usuario.Button6Click(Sender: TObject);
+begin
+Self.Destroy;
+Form2.Show;
 end;
 
 end.

@@ -37,8 +37,9 @@ object Form_alterajogo: TForm_alterajogo
     Top = 216
     Width = 105
     Height = 65
-    Caption = 'Pesquisar por x'
+    Caption = 'Cancelar'
     TabOrder = 3
+    OnClick = Button2Click
   end
   object DBGrid1: TDBGrid
     Left = 464

@@ -41,6 +41,9 @@ if   dtmusuario.ADOTable1.Locate('usuario', Edit1.Text, [loCaseInsensitive ]) an
   dtmusuario.ADOTable1.Locate('senha', Edit2.Text, [loCaseInsensitive ]) then
   begin
   dtmusuario.ADOTable1.Close;
+
+Form2:=TForm2.Create(Application);
+
   Form2.Show;
   Self.Hide;
   Edit2.Text:='';
