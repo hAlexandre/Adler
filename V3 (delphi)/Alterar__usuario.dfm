@@ -153,7 +153,6 @@ object formAlter_Usuario: TformAlter_Usuario
     end
   end
   object ADOQuery1: TADOQuery
-    Active = True
     Connection = dtmusuario.ADOConnection1
     CursorType = ctStatic
     Parameters = <>

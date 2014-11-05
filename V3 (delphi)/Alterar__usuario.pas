@@ -120,6 +120,15 @@ end;
 
 procedure TformAlter_Usuario.Button5Click(Sender: TObject);
 begin
+
+
+
+
+ case Application.MessageBox('Deseja realmente excluir este item?', 
+    'Excluir item', MB_YESNO + MB_ICONQUESTION) of 
+    IDYES: //se clicar em sim faça isso 
+      begin 
+                 
                  dtmusuario.ADOTable1.open ;
        aux := DBGrid1.DataSource.DataSet.FieldValues['codigo'];
        if dtmusuario.ADOTable1.Locate('codigo',aux,[])    then
@@ -128,6 +137,12 @@ begin
 
 
        end;
+      end; 
+    IDNO: //se clicar em não faça isso 
+      begin 
+
+      end; 
+  end;
 end;
 
 procedure TformAlter_Usuario.FormClose(Sender: TObject;

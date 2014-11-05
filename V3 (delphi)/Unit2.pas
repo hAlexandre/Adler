@@ -27,6 +27,7 @@ type
     procedure eladelogin1Click(Sender: TObject);
     procedure Inserirusurio1Click(Sender: TObject);
     procedure AlterarUsurio1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -90,6 +91,12 @@ formAlter_Usuario.show;
 formAlter_Usuario.DBGrid1.Enabled:=True;
 formAlter_Usuario.DBGrid1.Refresh;
 
+end;
+
+procedure TForm2.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Self.Destroy;
+  Form1.Show;
 end;
 
 end.

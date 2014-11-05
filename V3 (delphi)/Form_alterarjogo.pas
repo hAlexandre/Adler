@@ -52,7 +52,7 @@ var
 
 implementation
 
-uses datamodule_jogos, Unit1;
+uses datamodule_jogos, Unit1, Unit2;
 
 {$R *.dfm}
 
@@ -133,14 +133,33 @@ end;
 
 procedure TForm_alterajogo.Button6Click(Sender: TObject);
 begin
-datamodulejogos.ADOTable1.open ;
+
+
+       //1. Exemplo mensagem de confirmação de exclusão- Usando Application.MessageBox 
+  case Application.MessageBox('Deseja realmente excluir este item?', 
+    'Excluir item', MB_YESNO + MB_ICONQUESTION) of
+    IDYES:
+      begin
+
+       datamodulejogos.ADOTable1.open ;
        aux := DBGrid1.DataSource.DataSet.FieldValues['codigo'];
        if datamodulejogos.ADOTable1.Locate('codigo',aux,[])    then
        begin
         DBGrid1.DataSource.DataSet.Delete;
-
-
        end;
+      end; 
+    IDNO:
+      begin
+
+       
+    end;
+
+      end;
+
+
+
+
+
 end;
 
 end.

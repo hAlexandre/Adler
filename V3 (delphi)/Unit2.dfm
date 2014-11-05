@@ -14,6 +14,7 @@ object Form2: TForm2
   OldCreateOrder = False
   WindowState = wsMaximized
   OnActivate = FormActivate
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object MainMenu1: TMainMenu

@@ -1,6 +1,6 @@
 object Form_alterajogo: TForm_alterajogo
-  Left = 773
-  Top = 145
+  Left = 460
+  Top = 184
   Width = 872
   Height = 574
   Caption = 'Form_alterajogo'
@@ -165,7 +165,6 @@ object Form_alterajogo: TForm_alterajogo
     end
   end
   object ADOQuery1: TADOQuery
-    Active = True
     Connection = datamodulejogos.ADOConnection1
     CursorType = ctStatic
     DataSource = datamodulejogos.DataSource1
