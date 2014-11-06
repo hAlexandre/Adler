@@ -41,6 +41,58 @@ object Formusuario_: TFormusuario_
     Font.Style = []
     ParentFont = False
   end
+  object Label3: TLabel
+    Left = 72
+    Top = 24
+    Width = 43
+    Height = 21
+    Caption = 'Nome'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 72
+    Top = 120
+    Width = 37
+    Height = 21
+    Caption = 'Perfil'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 72
+    Top = 152
+    Width = 69
+    Height = 21
+    Caption = 'Endereco'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 72
+    Top = 184
+    Width = 28
+    Height = 21
+    Caption = 'CPF'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object Edit1: TEdit
     Left = 176
     Top = 56
@@ -55,9 +107,37 @@ object Formusuario_: TFormusuario_
     Height = 21
     TabOrder = 1
   end
+  object Edit3: TEdit
+    Left = 176
+    Top = 24
+    Width = 137
+    Height = 21
+    TabOrder = 4
+  end
+  object Edit4: TEdit
+    Left = 176
+    Top = 128
+    Width = 137
+    Height = 21
+    TabOrder = 5
+  end
+  object Edit5: TEdit
+    Left = 176
+    Top = 152
+    Width = 137
+    Height = 21
+    TabOrder = 6
+  end
+  object Edit6: TEdit
+    Left = 176
+    Top = 184
+    Width = 137
+    Height = 21
+    TabOrder = 7
+  end
   object Button1: TButton
     Left = 128
-    Top = 160
+    Top = 240
     Width = 75
     Height = 25
     Caption = 'Inserir'
@@ -65,8 +145,8 @@ object Formusuario_: TFormusuario_
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 248
-    Top = 160
+    Left = 224
+    Top = 240
     Width = 75
     Height = 25
     Caption = 'Descartar'

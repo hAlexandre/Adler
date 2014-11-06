@@ -41,6 +41,22 @@ object dtmusuario: Tdtmusuario
       FieldName = 'Codigo'
       ReadOnly = True
     end
+    object ADOTable1nome: TWideStringField
+      FieldName = 'nome'
+      Size = 255
+    end
+    object ADOTable1perfil: TWideStringField
+      FieldName = 'perfil'
+      Size = 255
+    end
+    object ADOTable1endereco: TWideStringField
+      FieldName = 'endereco'
+      Size = 255
+    end
+    object ADOTable1cpf: TWideStringField
+      FieldName = 'cpf'
+      Size = 255
+    end
   end
   object DataSource1: TDataSource
     DataSet = ADOTable1

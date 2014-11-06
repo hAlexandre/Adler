@@ -31,6 +31,8 @@ type
     Button4: TButton;
     Label1: TLabel;
     Button5: TButton;
+    Label2: TLabel;
+    Edit3: TEdit;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -92,6 +94,7 @@ begin
 
         dtmusuario.ADOTable1.Edit;
         dtmusuario.ADOTable1.FieldByName('senha').Value:=edit2.Text;
+        dtmusuario.ADOTable1.FieldByName('endereco').Value:=edit3.Text;
         dtmusuario.ADOTable1.Post;
     end;
     ADOQuery1.Refresh;
@@ -99,12 +102,15 @@ begin
     Button1.Enabled:=True;
     DBGrid1.Visible:=True;
     Edit2.Visible:=False;
+    Edit3.Visible:=False;
     Button3.Visible:=False;
     Button2.Visible:=True;
     Button4.Visible:=False;
     DBGrid1.Refresh;
     Edit2.Text:='';
+    Edit3.Text:='';
     Label1.Visible:=False;
+    Label2.Visible:=False;
     ShowMessage('Alteração realizada com sucesso');
 
 

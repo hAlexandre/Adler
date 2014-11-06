@@ -17,11 +17,25 @@ object formAlter_Usuario: TformAlter_Usuario
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 336
-    Top = 64
+    Left = 328
+    Top = 24
     Width = 78
     Height = 18
-    Caption = 'Nova senha'
+    Caption = 'Novo senha'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Visible = False
+  end
+  object Label2: TLabel
+    Left = 328
+    Top = 72
+    Width = 99
+    Height = 18
+    Caption = 'Novo endereco'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -49,7 +63,7 @@ object formAlter_Usuario: TformAlter_Usuario
   object DBGrid1: TDBGrid
     Left = 328
     Top = 264
-    Width = 320
+    Width = 401
     Height = 120
     DataSource = DataSource1
     TabOrder = 2
@@ -61,12 +75,29 @@ object formAlter_Usuario: TformAlter_Usuario
     Columns = <
       item
         Expanded = False
-        FieldName = 'usuario'
+        FieldName = 'nome'
+        Width = 63
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'senha'
+        FieldName = 'usario'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'perfil'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'endereco'
+        Width = 56
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'cpf'
         Visible = True
       end>
   end
@@ -81,7 +112,7 @@ object formAlter_Usuario: TformAlter_Usuario
   end
   object Edit2: TEdit
     Left = 328
-    Top = 88
+    Top = 48
     Width = 121
     Height = 21
     TabOrder = 4
@@ -89,7 +120,7 @@ object formAlter_Usuario: TformAlter_Usuario
   end
   object Button3: TButton
     Left = 320
-    Top = 136
+    Top = 128
     Width = 89
     Height = 25
     Caption = 'Salvar altera'#231#245'es'
@@ -99,7 +130,7 @@ object formAlter_Usuario: TformAlter_Usuario
   end
   object Button4: TButton
     Left = 424
-    Top = 136
+    Top = 128
     Width = 121
     Height = 25
     Caption = 'Descartar altera'#231#245'es'
@@ -115,6 +146,14 @@ object formAlter_Usuario: TformAlter_Usuario
     Caption = 'Excluir registro'
     TabOrder = 7
     OnClick = Button5Click
+  end
+  object Edit3: TEdit
+    Left = 328
+    Top = 96
+    Width = 121
+    Height = 21
+    TabOrder = 8
+    Visible = False
   end
   object MainMenu1: TMainMenu
     Top = 65528
@@ -153,7 +192,6 @@ object formAlter_Usuario: TformAlter_Usuario
     end
   end
   object ADOQuery1: TADOQuery
-    Active = True
     Connection = dtmusuario.ADOConnection1
     CursorType = ctStatic
     Parameters = <>

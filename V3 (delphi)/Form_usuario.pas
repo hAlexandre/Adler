@@ -24,6 +24,14 @@ type
     eladelogin1: TMenuItem;
     Edit1: TEdit;
     Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Label6: TLabel;
+    Label5: TLabel;
+    Label4: TLabel;
+    Label3: TLabel;
     Label2: TLabel;
     Label1: TLabel;
     Button1: TButton;
@@ -57,17 +65,26 @@ begin
 
   dtmusuario.ADOTable1.Open;
   dtmusuario.ADOTable1.Insert;
+  dtmusuario.ADOTable1.FieldByName('nome').Value:=edit3.Text;
   dtmusuario.ADOTable1.FieldByName('usuario').Value:=edit1.Text;
   dtmusuario.ADOTable1.FieldByName('senha').Value:=edit2.Text;
+  dtmusuario.ADOTable1.FieldByName('perfil').Value:=edit4.Text;
+  dtmusuario.ADOTable1.FieldByName('endereco').Value:=edit5.Text;
+  dtmusuario.ADOTable1.FieldByName('cpf').Value:=edit6.Text;
+
   dtmusuario.ADOTable1.Post;
   ShowMessage('Usuário inserido com sucesso');
-  Self.Destroy;
+  Self.DestroyHandle;
   Form2.show;
 
 end;
 
 procedure TFormusuario_.Button2Click(Sender: TObject);
 begin
+Edit6.Text:='';
+Edit5.Text:='';
+Edit4.Text:='';
+Edit3.Text:='';
 Edit2.Text:='';
 Edit1.text:='';
 end;
