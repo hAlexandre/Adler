@@ -3,7 +3,7 @@ object Form_alterajogo: TForm_alterajogo
   Top = 145
   Width = 872
   Height = 574
-  Caption = 'Form_alterajogo'
+  Caption = 'Altera Jogo'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -165,7 +165,6 @@ object Form_alterajogo: TForm_alterajogo
     end
   end
   object ADOQuery1: TADOQuery
-    Active = True
     Connection = datamodulejogos.ADOConnection1
     CursorType = ctStatic
     DataSource = datamodulejogos.DataSource1

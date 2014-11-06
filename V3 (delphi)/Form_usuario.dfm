@@ -3,7 +3,7 @@ object Formusuario_: TFormusuario_
   Top = 141
   Width = 1044
   Height = 600
-  Caption = 'Formusuario_'
+  Caption = 'Inserir Usuario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -116,7 +116,7 @@ object Formusuario_: TFormusuario_
   end
   object Edit4: TEdit
     Left = 176
-    Top = 128
+    Top = 120
     Width = 137
     Height = 21
     TabOrder = 5

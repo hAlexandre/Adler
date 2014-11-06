@@ -75,6 +75,11 @@ object formAlter_Usuario: TformAlter_Usuario
     Columns = <
       item
         Expanded = False
+        FieldName = 'Codigo'
+        Visible = True
+      end
+      item
+        Expanded = False
         FieldName = 'nome'
         Width = 63
         Visible = True

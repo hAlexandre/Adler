@@ -70,10 +70,13 @@ end;
 procedure TformAlter_Usuario.Button2Click(Sender: TObject);
 begin
 Edit2.Visible:=True;
+Edit3.Visible:=True;
     Edit2.text := '';
+    Edit3.text := '';
     Button2.Visible:=False;
     DBGrid1.Visible:=False;
     Label1.Visible:=True;
+    Label2.Visible:=True;
     Button3.Visible:=True;
     Button4.Visible:=True;
     Button1.Enabled:=False;

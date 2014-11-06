@@ -3,7 +3,7 @@ object Form2: TForm2
   Top = 122
   Width = 1076
   Height = 437
-  Caption = 'Form2'
+  Caption = 'Tela Principal'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
