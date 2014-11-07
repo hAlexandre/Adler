@@ -46,6 +46,7 @@ type
     Label13: TLabel;
     Label14: TLabel;
     Label15: TLabel;
+    Button3: TButton;
     procedure eladelogin1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);

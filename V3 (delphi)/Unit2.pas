@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Menus, Grids, DBGrids;
+  Dialogs, StdCtrls, Menus, Grids, DBGrids, jpeg, ExtCtrls;
 
 type
   TForm2 = class(TForm)
@@ -20,6 +20,18 @@ type
     AlterarFuncionrio1: TMenuItem;
     RemoverFuncionrio1: TMenuItem;
     eladelogin1: TMenuItem;
+    Background: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    Label3: TLabel;
+    Button3: TButton;
+    Button4: TButton;
+    Label4: TLabel;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
     procedure FormActivate(Sender: TObject);
     procedure Inserirjogo1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);

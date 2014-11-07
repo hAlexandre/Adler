@@ -3175,7 +3175,7 @@ object Formusuario_: TFormusuario_
   end
   object Label1: TLabel
     Left = 800
-    Top = 277
+    Top = 213
     Width = 102
     Height = 33
     Caption = 'Usuario'
@@ -3189,7 +3189,7 @@ object Formusuario_: TFormusuario_
   end
   object Label3: TLabel
     Left = 800
-    Top = 203
+    Top = 283
     Width = 74
     Height = 33
     Caption = 'Nome'
@@ -3258,8 +3258,8 @@ object Formusuario_: TFormusuario_
     Transparent = True
   end
   object Label8: TLabel
-    Left = 874
-    Top = 208
+    Left = 906
+    Top = 216
     Width = 11
     Height = 21
     Caption = '*'
@@ -3272,7 +3272,7 @@ object Formusuario_: TFormusuario_
     Transparent = True
   end
   object Label9: TLabel
-    Left = 906
+    Left = 874
     Top = 280
     Width = 11
     Height = 21
@@ -3365,7 +3365,7 @@ object Formusuario_: TFormusuario_
   end
   object Edit1: TEdit
     Left = 800
-    Top = 317
+    Top = 253
     Width = 179
     Height = 25
     TabOrder = 0
@@ -3379,7 +3379,7 @@ object Formusuario_: TFormusuario_
   end
   object Edit3: TEdit
     Left = 800
-    Top = 243
+    Top = 323
     Width = 179
     Height = 25
     TabOrder = 4
@@ -3422,6 +3422,15 @@ object Formusuario_: TFormusuario_
     Caption = 'Descartar'
     TabOrder = 3
     OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 80
+    Top = 24
+    Width = 193
+    Height = 49
+    Caption = '<< VOLTAR'
+    TabOrder = 8
+    OnClick = eladelogin1Click
   end
   object MainMenu1: TMainMenu
     Top = 65528
