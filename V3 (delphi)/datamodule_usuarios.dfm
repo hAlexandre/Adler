@@ -1,4 +1,4 @@
-object dtmusuario: Tdtmusuario
+object BDUsuarios: TBDUsuarios
   OldCreateOrder = False
   Left = 1002
   Top = 112

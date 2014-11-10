@@ -7,7 +7,7 @@ uses
   Dialogs, StdCtrls, Menus, Grids, DBGrids, jpeg, ExtCtrls;
 
 type
-  TForm2 = class(TForm)
+  TTelaInicial = class(TForm)
     MainMenu1: TMainMenu;
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
@@ -46,7 +46,7 @@ type
   end;
 
 var
-  Form2: TForm2;
+  TelaInicial: TTelaInicial;
 
 implementation
 
@@ -56,51 +56,51 @@ uses Unit1, Unit3, Form_alterarjogo, datamodule_usuarios, Form_usuario,
 
 {$R *.dfm}
 
-procedure TForm2.FormActivate(Sender: TObject);
+procedure TTelaInicial.FormActivate(Sender: TObject);
 begin
-Form1.Hide;
+TelaLogin.Hide;
 end;
 
-procedure TForm2.Inserirjogo1Click(Sender: TObject);
+procedure TTelaInicial.Inserirjogo1Click(Sender: TObject);
 begin
   Self.Hide;
-  Form3:=TForm3.Create(Application);
-  Form3.Show;
+  InserirJogo:=TInserirJogo.Create(Application);
+  InserirJogo.Show;
 end;
 
-procedure TForm2.Button1Click(Sender: TObject);
+procedure TTelaInicial.Button1Click(Sender: TObject);
 begin
   Self.hide;
-  Form1.Show;
+  TelaLogin.Show;
 end;
 
-procedure TForm2.Alterarjogo1Click(Sender: TObject);
+procedure TTelaInicial.Alterarjogo1Click(Sender: TObject);
 begin
-Form_alterajogo:=TForm_alterajogo.Create(Application);
-Form_alterajogo.DBGrid1.refresh;
-Form_alterajogo.Show;
+ConsultarJogo:=TConsultarJogo.Create(Application);
+ConsultarJogo.DBGrid1.refresh;
+ConsultarJogo.Show;
 end;
 
-procedure TForm2.eladelogin1Click(Sender: TObject);
+procedure TTelaInicial.eladelogin1Click(Sender: TObject);
 begin
 Self.Hide;
-Form1.Show;
+TelaLogin.Show;
 end;
 
-procedure TForm2.Inserirusurio1Click(Sender: TObject);
+procedure TTelaInicial.Inserirusurio1Click(Sender: TObject);
 begin
-      Formusuario_:=TFormusuario_.Create(Application);
-      Formusuario_.Show;
+      InserirUsuario:=TInserirUsuario.Create(Application);
+      InserirUsuario.Show;
       Self.Hide;
 end;
 
-procedure TForm2.AlterarUsurio1Click(Sender: TObject);
+procedure TTelaInicial.AlterarUsurio1Click(Sender: TObject);
 begin
 Self.Hide;
-formAlter_Usuario:=TformAlter_Usuario.Create(Application);
-formAlter_Usuario.show;
-formAlter_Usuario.DBGrid1.Enabled:=True;
-formAlter_Usuario.DBGrid1.Refresh;
+AlterarUsuario:=TAlterarUsuario.Create(Application);
+AlterarUsuario.show;
+AlterarUsuario.DBGrid1.Enabled:=True;
+AlterarUsuario.DBGrid1.Refresh;
 
 end;
 

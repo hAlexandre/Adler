@@ -7,7 +7,7 @@ uses
   Dialogs, StdCtrls, Grids, DBGrids, DB, ADODB, ExtCtrls, DBCtrls, jpeg;
 
 type
-  TForm1 = class(TForm)
+  TTelaLogin = class(TForm)
     Button1: TButton;
     Label2: TLabel;
     Edit1: TEdit;
@@ -24,7 +24,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  TelaLogin: TTelaLogin;
 
 implementation
 
@@ -32,16 +32,16 @@ uses Unit2, datamodule_usuarios;
 
 {$R *.dfm}
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TTelaLogin.Button1Click(Sender: TObject);
 begin
 
-dtmusuario.ADOTable1.Open;
+BDUsuarios.ADOTable1.Open;
 
-if   dtmusuario.ADOTable1.Locate('usuario', Edit1.Text, [loCaseInsensitive ]) and
-  dtmusuario.ADOTable1.Locate('senha', Edit2.Text, [loCaseInsensitive ]) then
+if   BDUsuarios.ADOTable1.Locate('usuario', Edit1.Text, [loCaseInsensitive ]) and
+  BDUsuarios.ADOTable1.Locate('senha', Edit2.Text, [loCaseInsensitive ]) then
   begin
-  dtmusuario.ADOTable1.Close;
-  Form2.Show;
+  BDUsuarios.ADOTable1.Close;
+  TelaInicial.Show;
   Self.Hide;
   Edit2.Text:='';
   Edit1.Text:='';
@@ -57,7 +57,7 @@ else
 
 end;
 
-procedure TForm1.Edit2KeyPress(Sender: TObject; var Key: Char);
+procedure TTelaLogin.Edit2KeyPress(Sender: TObject; var Key: Char);
 begin
   if (key = #13) then
   begin

@@ -1,4 +1,4 @@
-object Form_alterajogo: TForm_alterajogo
+object ConsultarJogo: TConsultarJogo
   Left = 773
   Top = 145
   Width = 872
@@ -7,50 +7,50 @@ object Form_alterajogo: TForm_alterajogo
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
   OnClose = FormClose
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object Button1: TButton
-    Left = 8
-    Top = 152
-    Width = 105
-    Height = 57
+    Left = 10
+    Top = 199
+    Width = 138
+    Height = 74
     Caption = 'Pesquisar por nome'
     TabOrder = 0
     OnClick = Button1Click
   end
   object Edit1: TEdit
-    Left = 8
-    Top = 88
-    Width = 225
-    Height = 21
+    Left = 10
+    Top = 115
+    Width = 295
+    Height = 25
     TabOrder = 2
   end
   object Button2: TButton
-    Left = 8
-    Top = 216
-    Width = 105
-    Height = 65
+    Left = 10
+    Top = 282
+    Width = 138
+    Height = 85
     Caption = 'Pesquisar por x'
     TabOrder = 3
   end
   object DBGrid1: TDBGrid
-    Left = 464
-    Top = 192
-    Width = 329
-    Height = 153
+    Left = 607
+    Top = 251
+    Width = 430
+    Height = 200
     DataSource = DataSource1
     Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete]
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
-    TitleFont.Height = -11
+    TitleFont.Height = -14
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
     Columns = <
@@ -76,47 +76,47 @@ object Form_alterajogo: TForm_alterajogo
       end>
   end
   object Button3: TButton
-    Left = 480
-    Top = 360
-    Width = 113
-    Height = 33
+    Left = 628
+    Top = 471
+    Width = 147
+    Height = 43
     Caption = 'Alterar registro'
     TabOrder = 4
     OnClick = Button3Click
   end
   object Edit2: TEdit
-    Left = 376
-    Top = 88
-    Width = 121
-    Height = 21
+    Left = 492
+    Top = 115
+    Width = 158
+    Height = 25
     TabOrder = 5
     Visible = False
   end
   object Button4: TButton
-    Left = 552
-    Top = 376
-    Width = 121
-    Height = 41
+    Left = 722
+    Top = 492
+    Width = 158
+    Height = 53
     Caption = 'Descartar altera'#231#245'es'
     TabOrder = 6
     Visible = False
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 400
-    Top = 376
-    Width = 121
-    Height = 41
+    Left = 523
+    Top = 492
+    Width = 158
+    Height = 53
     Caption = 'Salvar altera'#231#245'es'
     TabOrder = 7
     Visible = False
     OnClick = Button5Click
   end
   object Button6: TButton
-    Left = 616
-    Top = 360
-    Width = 97
-    Height = 33
+    Left = 806
+    Top = 471
+    Width = 126
+    Height = 43
     Caption = 'Excluir registro'
     TabOrder = 8
     OnClick = Button6Click
@@ -165,9 +165,9 @@ object Form_alterajogo: TForm_alterajogo
     end
   end
   object ADOQuery1: TADOQuery
-    Connection = datamodulejogos.ADOConnection1
+    Connection = BDJogos.ADOConnection1
     CursorType = ctStatic
-    DataSource = datamodulejogos.DataSource1
+    DataSource = BDJogos.DataSource1
     Parameters = <>
     SQL.Strings = (
       'Select * from Jogo')

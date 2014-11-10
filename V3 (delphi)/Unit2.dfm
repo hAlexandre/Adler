@@ -1,10 +1,9 @@
-object Form2: TForm2
+object TelaInicial: TTelaInicial
   Left = 305
   Top = 343
   Width = 1076
   Height = 437
   HorzScrollBar.Position = 22
-  VertScrollBar.Position = 20
   Caption = 'Tela Principal'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -20,7 +19,7 @@ object Form2: TForm2
   TextHeight = 17
   object Background: TImage
     Left = -22
-    Top = -20
+    Top = 0
     Width = 1921
     Height = 977
     Picture.Data = {
@@ -2788,7 +2787,7 @@ object Form2: TForm2
   end
   object Label1: TLabel
     Left = 450
-    Top = 60
+    Top = 80
     Width = 944
     Height = 114
     Caption = 'Bem Vindo ao SVOJ'
@@ -2802,7 +2801,7 @@ object Form2: TForm2
   end
   object Label2: TLabel
     Left = 186
-    Top = 244
+    Top = 264
     Width = 413
     Height = 48
     Caption = 'Usu'#225'rios do Sistema'
@@ -2816,7 +2815,7 @@ object Form2: TForm2
   end
   object Label3: TLabel
     Left = 882
-    Top = 244
+    Top = 264
     Width = 112
     Height = 48
     Caption = 'Jogos'
@@ -2830,7 +2829,7 @@ object Form2: TForm2
   end
   object Label4: TLabel
     Left = 1362
-    Top = 252
+    Top = 272
     Width = 253
     Height = 48
     Caption = 'Funcion'#225'rios'
@@ -2844,7 +2843,7 @@ object Form2: TForm2
   end
   object Button1: TButton
     Left = 250
-    Top = 377
+    Top = 397
     Width = 281
     Height = 89
     Caption = 'Inserir Usu'#225'rio'
@@ -2859,7 +2858,7 @@ object Form2: TForm2
   end
   object Button2: TButton
     Left = 250
-    Top = 537
+    Top = 557
     Width = 281
     Height = 89
     Caption = 'Consultar Usu'#225'rio'
@@ -2874,7 +2873,7 @@ object Form2: TForm2
   end
   object Button3: TButton
     Left = 802
-    Top = 377
+    Top = 397
     Width = 281
     Height = 89
     Caption = 'Inserir Jogo'
@@ -2889,7 +2888,7 @@ object Form2: TForm2
   end
   object Button4: TButton
     Left = 802
-    Top = 537
+    Top = 557
     Width = 281
     Height = 89
     Caption = 'Consultar Jogo'
@@ -2904,7 +2903,7 @@ object Form2: TForm2
   end
   object Button5: TButton
     Left = 1354
-    Top = 377
+    Top = 397
     Width = 281
     Height = 89
     Caption = 'Inserir Funcion'#225'rio'
@@ -2918,7 +2917,7 @@ object Form2: TForm2
   end
   object Button6: TButton
     Left = 1354
-    Top = 537
+    Top = 557
     Width = 281
     Height = 89
     Caption = 'Consultar Funcion'#225'rio'
@@ -2932,7 +2931,7 @@ object Form2: TForm2
   end
   object Button7: TButton
     Left = 816
-    Top = 872
+    Top = 892
     Width = 249
     Height = 65
     Caption = 'Sair do Sistema'

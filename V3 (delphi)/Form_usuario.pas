@@ -7,7 +7,7 @@ uses
   Dialogs, Menus, StdCtrls, jpeg, ExtCtrls;
 
 type
-  TFormusuario_ = class(TForm)
+  TInserirUsuario = class(TForm)
     MainMenu1: TMainMenu;
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
@@ -57,7 +57,7 @@ type
   end;
 
 var
-  Formusuario_: TFormusuario_;
+  InserirUsuario: TInserirUsuario;
 
 implementation
 
@@ -65,32 +65,32 @@ uses Unit2, datamodule_usuarios, datamodule_jogos;
 
 {$R *.dfm}
 
-procedure TFormusuario_.eladelogin1Click(Sender: TObject);
+procedure TInserirUsuario.eladelogin1Click(Sender: TObject);
 begin
-Self.Destroy;
-Form2.Show;
+  TelaInicial.show;
+  Self.Hide;
 end;
 
-procedure TFormusuario_.Button1Click(Sender: TObject);
+procedure TInserirUsuario.Button1Click(Sender: TObject);
 begin
 
-  dtmusuario.ADOTable1.Open;
-  dtmusuario.ADOTable1.Insert;
-  dtmusuario.ADOTable1.FieldByName('nome').Value:=edit3.Text;
-  dtmusuario.ADOTable1.FieldByName('usuario').Value:=edit1.Text;
-  dtmusuario.ADOTable1.FieldByName('senha').Value:=edit2.Text;
-  dtmusuario.ADOTable1.FieldByName('perfil').Value:=edit4.Text;
-  dtmusuario.ADOTable1.FieldByName('endereco').Value:=edit5.Text;
-  dtmusuario.ADOTable1.FieldByName('cpf').Value:=edit6.Text;
+  BDUsuarios.ADOTable1.Open;
+  BDUsuarios.ADOTable1.Insert;
+  BDUsuarios.ADOTable1.FieldByName('nome').Value:=edit3.Text;
+  BDUsuarios.ADOTable1.FieldByName('usuario').Value:=edit1.Text;
+  BDUsuarios.ADOTable1.FieldByName('senha').Value:=edit2.Text;
+  BDUsuarios.ADOTable1.FieldByName('perfil').Value:=edit4.Text;
+  BDUsuarios.ADOTable1.FieldByName('endereco').Value:=edit5.Text;
+  BDUsuarios.ADOTable1.FieldByName('cpf').Value:=edit6.Text;
 
-  dtmusuario.ADOTable1.Post;
+  BDUsuarios.ADOTable1.Post;
   ShowMessage('Usuário inserido com sucesso');
   Self.DestroyHandle;
-  Form2.show;
+  TelaInicial.show;
 
 end;
 
-procedure TFormusuario_.Button2Click(Sender: TObject);
+procedure TInserirUsuario.Button2Click(Sender: TObject);
 begin
 Edit6.Text:='';
 Edit5.Text:='';

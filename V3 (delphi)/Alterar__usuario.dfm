@@ -1,75 +1,75 @@
-object formAlter_Usuario: TformAlter_Usuario
-  Left = 536
-  Top = 156
+object AlterarUsuario: TAlterarUsuario
+  Left = 455
+  Top = 170
   Width = 820
   Height = 585
   Caption = 'alterar usuario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
   OnClose = FormClose
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object Label1: TLabel
-    Left = 328
-    Top = 24
-    Width = 78
-    Height = 18
+    Left = 429
+    Top = 31
+    Width = 104
+    Height = 24
     Caption = 'Novo senha'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -20
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     Visible = False
   end
   object Label2: TLabel
-    Left = 328
-    Top = 72
-    Width = 99
-    Height = 18
+    Left = 429
+    Top = 94
+    Width = 133
+    Height = 24
     Caption = 'Novo endereco'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -20
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     Visible = False
   end
   object Edit1: TEdit
-    Left = 8
-    Top = 88
-    Width = 225
-    Height = 21
+    Left = 10
+    Top = 115
+    Width = 295
+    Height = 25
     TabOrder = 0
   end
   object Button1: TButton
-    Left = 8
-    Top = 128
-    Width = 105
-    Height = 57
+    Left = 10
+    Top = 167
+    Width = 138
+    Height = 75
     Caption = 'Pesquisar por nome'
     TabOrder = 1
     OnClick = Button1Click
   end
   object DBGrid1: TDBGrid
-    Left = 328
-    Top = 264
-    Width = 401
-    Height = 120
+    Left = 429
+    Top = 345
+    Width = 524
+    Height = 157
     DataSource = DataSource1
     TabOrder = 2
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
-    TitleFont.Height = -11
+    TitleFont.Height = -14
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
     Columns = <
@@ -107,58 +107,67 @@ object formAlter_Usuario: TformAlter_Usuario
       end>
   end
   object Button2: TButton
-    Left = 328
-    Top = 392
-    Width = 97
-    Height = 25
+    Left = 429
+    Top = 513
+    Width = 127
+    Height = 32
     Caption = 'Alterar registro'
     TabOrder = 3
     OnClick = Button2Click
   end
   object Edit2: TEdit
-    Left = 328
-    Top = 48
-    Width = 121
-    Height = 21
+    Left = 429
+    Top = 63
+    Width = 158
+    Height = 25
     TabOrder = 4
     Visible = False
   end
   object Button3: TButton
-    Left = 320
-    Top = 128
-    Width = 89
-    Height = 25
+    Left = 418
+    Top = 167
+    Width = 117
+    Height = 33
     Caption = 'Salvar altera'#231#245'es'
     TabOrder = 5
     Visible = False
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 424
-    Top = 128
-    Width = 121
-    Height = 25
+    Left = 554
+    Top = 167
+    Width = 159
+    Height = 33
     Caption = 'Descartar altera'#231#245'es'
     TabOrder = 6
     Visible = False
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 448
-    Top = 392
-    Width = 105
-    Height = 25
+    Left = 586
+    Top = 513
+    Width = 137
+    Height = 32
     Caption = 'Excluir registro'
     TabOrder = 7
     OnClick = Button5Click
   end
   object Edit3: TEdit
-    Left = 328
-    Top = 96
-    Width = 121
-    Height = 21
+    Left = 429
+    Top = 126
+    Width = 158
+    Height = 25
     TabOrder = 8
     Visible = False
+  end
+  object Button6: TButton
+    Left = 48
+    Top = 8
+    Width = 113
+    Height = 25
+    Caption = '<< VOLTAR'
+    TabOrder = 9
+    OnClick = Button6Click
   end
   object MainMenu1: TMainMenu
     Top = 65528
@@ -197,7 +206,7 @@ object formAlter_Usuario: TformAlter_Usuario
     end
   end
   object ADOQuery1: TADOQuery
-    Connection = dtmusuario.ADOConnection1
+    Connection = BDUsuarios.ADOConnection1
     CursorType = ctStatic
     Parameters = <>
     SQL.Strings = (

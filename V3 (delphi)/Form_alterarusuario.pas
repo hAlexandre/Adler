@@ -7,7 +7,7 @@ uses
   Dialogs, Menus;
 
 type
-  TAlterausuario = class(TForm)
+  TERROUSUARIO = class(TForm)
     MainMenu1: TMainMenu;
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
@@ -27,7 +27,7 @@ type
   end;
 
 var
-  Alterausuario: TAlterausuario;
+  ERROUSUARIO: TERROUSUARIO;
 
 implementation
 

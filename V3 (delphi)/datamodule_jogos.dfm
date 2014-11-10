@@ -1,4 +1,4 @@
-object datamodulejogos: Tdatamodulejogos
+object BDJogos: TBDJogos
   OldCreateOrder = False
   Left = 998
   Top = 235

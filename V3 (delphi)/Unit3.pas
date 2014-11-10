@@ -4,10 +4,10 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, DB, ADODB, Menus, StdCtrls;
+  Dialogs, DB, ADODB, Menus, StdCtrls, jpeg, ExtCtrls;
 
 type
-  TForm3 = class(TForm)
+  TInserirJogo = class(TForm)
     MainMenu1: TMainMenu;
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
@@ -30,9 +30,17 @@ type
     Button1: TButton;
     Button2: TButton;
     eladeLogin1: TMenuItem;
+    Button3: TButton;
+    Fundo_InsJogo: TImage;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure eladeLogin1Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,7 +48,7 @@ type
   end;
 
 var
-  Form3: TForm3;
+  InserirJogo: TInserirJogo;
 
 implementation
 
@@ -48,34 +56,39 @@ uses datamodule_jogos, Unit2, Unit1;
 
 {$R *.dfm}
 
-procedure TForm3.Button2Click(Sender: TObject);
+procedure TInserirJogo.Button2Click(Sender: TObject);
 begin
   Edit1.Text:='';
   Edit2.Text:='';
   Edit3.Text:='';
-  Form2.show;
-  Self.Hide;
 end;
 
-procedure TForm3.Button1Click(Sender: TObject);
+procedure TInserirJogo.Button1Click(Sender: TObject);
 begin
-  datamodulejogos.ADOTable1.Open;
-  datamodulejogos.ADOTable1.Insert;
+  BDJogos.ADOTable1.Open;
+  BDJogos.ADOTable1.Insert;
 
-      datamodulejogos.ADOTable1.FieldByName('Nome').Value:=edit1.Text;
-      datamodulejogos.ADOTable1.FieldByName('Descricao').Value:=edit2.Text;
-      datamodulejogos.ADOTable1.FieldByName('Preco').Value:=StrToFloat(edit3.Text);
-  datamodulejogos.ADOTable1.Post;
+      BDJogos.ADOTable1.FieldByName('Nome').Value:=edit1.Text;
+      BDJogos.ADOTable1.FieldByName('Descricao').Value:=edit2.Text;
+      BDJogos.ADOTable1.FieldByName('Preco').Value:=StrToFloat(edit3.Text);
+  BDJogos.ADOTable1.Post;
   ShowMessage('Jogo inserido com sucesso');
   Self.Destroy;
-  Form2.show;
+  TelaInicial.show;
 
 end;
 
-procedure TForm3.eladeLogin1Click(Sender: TObject);
+procedure TInserirJogo.eladeLogin1Click(Sender: TObject);
 begin
 Self.Hide;
-Form1.Show;
+TelaLogin.Show;
+end;
+
+procedure TInserirJogo.Button3Click(Sender: TObject);
+
+begin
+  TelaInicial.show;
+  Self.Hide;
 end;
 
 end.

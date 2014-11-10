@@ -1,10 +1,9 @@
-object Formusuario_: TFormusuario_
+object InserirUsuario: TInserirUsuario
   Left = 436
   Top = 141
-  Width = 1044
+  Width = 1068
   Height = 600
   HorzScrollBar.Position = 22
-  VertScrollBar.Position = 36
   Caption = 'Inserir Usuario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -19,9 +18,9 @@ object Formusuario_: TFormusuario_
   TextHeight = 17
   object ImagemInserirusuario: TImage
     Left = -22
-    Top = -20
+    Top = 0
     Width = 1921
-    Height = 977
+    Height = 993
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3161,7 +3160,7 @@ object Formusuario_: TFormusuario_
   end
   object Label2: TLabel
     Left = 800
-    Top = 351
+    Top = 387
     Width = 81
     Height = 33
     Caption = 'Senha'
@@ -3175,7 +3174,7 @@ object Formusuario_: TFormusuario_
   end
   object Label1: TLabel
     Left = 800
-    Top = 213
+    Top = 249
     Width = 102
     Height = 33
     Caption = 'Usuario'
@@ -3189,7 +3188,7 @@ object Formusuario_: TFormusuario_
   end
   object Label3: TLabel
     Left = 800
-    Top = 283
+    Top = 319
     Width = 74
     Height = 33
     Caption = 'Nome'
@@ -3203,7 +3202,7 @@ object Formusuario_: TFormusuario_
   end
   object Label4: TLabel
     Left = 800
-    Top = 425
+    Top = 461
     Width = 71
     Height = 33
     Caption = 'Perfil'
@@ -3217,7 +3216,7 @@ object Formusuario_: TFormusuario_
   end
   object Label5: TLabel
     Left = 800
-    Top = 499
+    Top = 535
     Width = 123
     Height = 33
     Caption = 'Endereco'
@@ -3231,7 +3230,7 @@ object Formusuario_: TFormusuario_
   end
   object Label6: TLabel
     Left = 800
-    Top = 573
+    Top = 609
     Width = 51
     Height = 33
     Caption = 'CPF'
@@ -3245,7 +3244,7 @@ object Formusuario_: TFormusuario_
   end
   object Label7: TLabel
     Left = 482
-    Top = 128
+    Top = 164
     Width = 835
     Height = 36
     Caption = 'Preencha os campos abaixo para criar um novo usu'#225'rio'
@@ -3259,7 +3258,7 @@ object Formusuario_: TFormusuario_
   end
   object Label8: TLabel
     Left = 906
-    Top = 216
+    Top = 252
     Width = 11
     Height = 21
     Caption = '*'
@@ -3273,7 +3272,7 @@ object Formusuario_: TFormusuario_
   end
   object Label9: TLabel
     Left = 874
-    Top = 280
+    Top = 316
     Width = 11
     Height = 21
     Caption = '*'
@@ -3287,7 +3286,7 @@ object Formusuario_: TFormusuario_
   end
   object Label10: TLabel
     Left = 882
-    Top = 356
+    Top = 392
     Width = 11
     Height = 21
     Caption = '*'
@@ -3301,7 +3300,7 @@ object Formusuario_: TFormusuario_
   end
   object Label11: TLabel
     Left = 874
-    Top = 426
+    Top = 462
     Width = 11
     Height = 21
     Caption = '*'
@@ -3315,7 +3314,7 @@ object Formusuario_: TFormusuario_
   end
   object Label12: TLabel
     Left = 922
-    Top = 506
+    Top = 542
     Width = 11
     Height = 21
     Caption = '*'
@@ -3329,7 +3328,7 @@ object Formusuario_: TFormusuario_
   end
   object Label13: TLabel
     Left = 850
-    Top = 578
+    Top = 614
     Width = 11
     Height = 21
     Caption = '*'
@@ -3343,7 +3342,7 @@ object Formusuario_: TFormusuario_
   end
   object Label14: TLabel
     Left = 794
-    Top = 808
+    Top = 844
     Width = 11
     Height = 21
     Caption = '*'
@@ -3357,7 +3356,7 @@ object Formusuario_: TFormusuario_
   end
   object Label15: TLabel
     Left = 813
-    Top = 808
+    Top = 844
     Width = 128
     Height = 17
     Caption = 'Campos Obrigat'#243'rios'
@@ -3365,67 +3364,67 @@ object Formusuario_: TFormusuario_
   end
   object Edit1: TEdit
     Left = 800
-    Top = 253
+    Top = 289
     Width = 179
     Height = 25
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 800
-    Top = 391
+    Top = 427
+    Width = 179
+    Height = 25
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 800
+    Top = 359
     Width = 179
     Height = 25
     TabOrder = 1
   end
-  object Edit3: TEdit
+  object Edit4: TEdit
     Left = 800
-    Top = 323
+    Top = 504
+    Width = 179
+    Height = 25
+    TabOrder = 3
+  end
+  object Edit5: TEdit
+    Left = 800
+    Top = 575
     Width = 179
     Height = 25
     TabOrder = 4
   end
-  object Edit4: TEdit
+  object Edit6: TEdit
     Left = 800
-    Top = 468
+    Top = 649
     Width = 179
     Height = 25
     TabOrder = 5
   end
-  object Edit5: TEdit
-    Left = 800
-    Top = 539
-    Width = 179
-    Height = 25
-    TabOrder = 6
-  end
-  object Edit6: TEdit
-    Left = 800
-    Top = 613
-    Width = 179
-    Height = 25
-    TabOrder = 7
-  end
   object Button1: TButton
     Left = 801
-    Top = 662
+    Top = 698
     Width = 178
     Height = 63
     Caption = 'Inserir'
-    TabOrder = 2
+    TabOrder = 6
     OnClick = Button1Click
   end
   object Button2: TButton
     Left = 839
-    Top = 750
+    Top = 786
     Width = 98
     Height = 33
     Caption = 'Descartar'
-    TabOrder = 3
+    TabOrder = 7
     OnClick = Button2Click
   end
   object Button3: TButton
     Left = 80
-    Top = 24
+    Top = 60
     Width = 193
     Height = 49
     Caption = '<< VOLTAR'

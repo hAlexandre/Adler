@@ -6,7 +6,7 @@ uses
   SysUtils, Classes, DB, ADODB;
 
 type
-  Tdatamodulejogos = class(TDataModule)
+  TBDJogos = class(TDataModule)
     ADOConnection1: TADOConnection;
     ADOTable1: TADOTable;
     DataSource1: TDataSource;
@@ -22,7 +22,7 @@ type
   end;
 
 var
-  datamodulejogos: Tdatamodulejogos;
+  BDJogos: TBDJogos;
 
 implementation
 

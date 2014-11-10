@@ -7,7 +7,7 @@ uses
   Dialogs, Menus, StdCtrls, DB, ADODB, Grids, DBGrids;
 
 type
-  TForm_alterajogo = class(TForm)
+  TConsultarJogo = class(TForm)
     MainMenu1: TMainMenu;
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
@@ -47,7 +47,7 @@ type
   end;
 
 var
-  Form_alterajogo: TForm_alterajogo;
+  ConsultarJogo: TConsultarJogo;
   aux: integer;
 
 implementation
@@ -56,7 +56,7 @@ uses datamodule_jogos, Unit1;
 
 {$R *.dfm}
 
-procedure TForm_alterajogo.Button1Click(Sender: TObject);
+procedure TConsultarJogo.Button1Click(Sender: TObject);
 begin
 
                  DBGrid1.Enabled:=True;
@@ -67,7 +67,7 @@ begin
                  ADOQuery1.Open ;
 end;
 
-procedure TForm_alterajogo.Button3Click(Sender: TObject);
+procedure TConsultarJogo.Button3Click(Sender: TObject);
 begin
     Edit2.Visible:=True;
     Edit2.text := DBGrid1.DataSource.DataSet.FieldValues['Nome'];
@@ -81,7 +81,7 @@ begin
 
 end;
 
-procedure TForm_alterajogo.Button4Click(Sender: TObject);
+procedure TConsultarJogo.Button4Click(Sender: TObject);
 begin
   Edit2.Text:='';
   Edit2.Visible:=False;
@@ -96,16 +96,16 @@ begin
 
 end;
 
-procedure TForm_alterajogo.Button5Click(Sender: TObject);
+procedure TConsultarJogo.Button5Click(Sender: TObject);
 begin
   ADOQuery1.refresh;
   aux := DBGrid1.DataSource.DataSet.FieldValues['codigo'];
-  if datamodulejogos.ADOTable1.Locate('codigo',aux,[])    then
+  if BDJogos.ADOTable1.Locate('codigo',aux,[])    then
     begin
-      datamodulejogos.ADOTable1.Open;
-      datamodulejogos.ADOTable1.Edit;
-      datamodulejogos.ADOTable1.FieldByName('Nome').Value:=edit2.Text;
-      datamodulejogos.ADOTable1.Post;
+      BDJogos.ADOTable1.Open;
+      BDJogos.ADOTable1.Edit;
+      BDJogos.ADOTable1.FieldByName('Nome').Value:=edit2.Text;
+      BDJogos.ADOTable1.Post;
     end;
     ADOQuery1.Refresh;
     Button1.Enabled:=True;
@@ -119,23 +119,23 @@ begin
 
 end;
 
-procedure TForm_alterajogo.eladelogin1Click(Sender: TObject);
+procedure TConsultarJogo.eladelogin1Click(Sender: TObject);
 begin
 Self.Hide;
-Form1.Show;
+TelaLogin.Show;
 end;
 
-procedure TForm_alterajogo.FormClose(Sender: TObject;
+procedure TConsultarJogo.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
 Self.Destroy;
 end;
 
-procedure TForm_alterajogo.Button6Click(Sender: TObject);
+procedure TConsultarJogo.Button6Click(Sender: TObject);
 begin
-datamodulejogos.ADOTable1.open ;
+BDJogos.ADOTable1.open ;
        aux := DBGrid1.DataSource.DataSet.FieldValues['codigo'];
-       if datamodulejogos.ADOTable1.Locate('codigo',aux,[])    then
+       if BDJogos.ADOTable1.Locate('codigo',aux,[])    then
        begin
         DBGrid1.DataSource.DataSet.Delete;
 

@@ -6,7 +6,7 @@ uses
   SysUtils, Classes, DB, ADODB;
 
 type
-  Tdtmusuario = class(TDataModule)
+  TBDUsuarios = class(TDataModule)
     ADOConnection1: TADOConnection;
     ADOTable1: TADOTable;
     DataSource1: TDataSource;
@@ -24,7 +24,7 @@ type
   end;
 
 var
-  dtmusuario: Tdtmusuario;
+  BDUsuarios: TBDUsuarios;
 
 implementation
 

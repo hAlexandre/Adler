@@ -7,7 +7,7 @@ uses
   Dialogs, Menus, Grids, DBGrids, DB, ADODB, StdCtrls;
 
 type
-  TformAlter_Usuario = class(TForm)
+  TAlterarUsuario = class(TForm)
     MainMenu1: TMainMenu;
     Usuario1: TMenuItem;
     Inserirusurio1: TMenuItem;
@@ -33,12 +33,14 @@ type
     Button5: TButton;
     Label2: TLabel;
     Edit3: TEdit;
+    Button6: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,7 +48,7 @@ type
   end;
 
 var
-  formAlter_Usuario: TformAlter_Usuario;
+  AlterarUsuario: TAlterarUsuario;
   aux: integer;
 
 
@@ -57,7 +59,7 @@ uses datamodule_jogos, datamodule_usuarios, Form_alterarjogo,
 
 {$R *.dfm}
 
-procedure TformAlter_Usuario.Button1Click(Sender: TObject);
+procedure TAlterarUsuario.Button1Click(Sender: TObject);
 begin
  DBGrid1.Enabled:=True;
                  ADOQuery1.Close; {Fecha a query}
@@ -67,7 +69,7 @@ begin
                  ADOQuery1.Open ;
 end;
 
-procedure TformAlter_Usuario.Button2Click(Sender: TObject);
+procedure TAlterarUsuario.Button2Click(Sender: TObject);
 begin
 Edit2.Visible:=True;
 Edit3.Visible:=True;
@@ -83,22 +85,22 @@ Edit3.Visible:=True;
 
 end;
 
-procedure TformAlter_Usuario.Button3Click(Sender: TObject);
+procedure TAlterarUsuario.Button3Click(Sender: TObject);
 begin
 
 
 
   ADOQuery1.refresh;
-  dtmusuario.ADOTable1.Open;
+  BDUsuarios.ADOTable1.Open;
   aux := DBGrid1.DataSource.DataSet.FieldValues['Codigo'];
-  if dtmusuario.ADOTable1.Locate('Codigo',aux,[])    then
+  if BDUsuarios.ADOTable1.Locate('Codigo',aux,[])    then
     begin
 
 
-        dtmusuario.ADOTable1.Edit;
-        dtmusuario.ADOTable1.FieldByName('senha').Value:=edit2.Text;
-        dtmusuario.ADOTable1.FieldByName('endereco').Value:=edit3.Text;
-        dtmusuario.ADOTable1.Post;
+        BDUsuarios.ADOTable1.Edit;
+        BDUsuarios.ADOTable1.FieldByName('senha').Value:=edit2.Text;
+        BDUsuarios.ADOTable1.FieldByName('endereco').Value:=edit3.Text;
+        BDUsuarios.ADOTable1.Post;
     end;
     ADOQuery1.Refresh;
     DBGrid1.Refresh;
@@ -121,17 +123,17 @@ Button1.Enabled:=True;
 
 end;
 
-procedure TformAlter_Usuario.Button4Click(Sender: TObject);
+procedure TAlterarUsuario.Button4Click(Sender: TObject);
 begin
 Self.Destroy;
-form2.Show;
+TelaInicial.Show;
 end;
 
-procedure TformAlter_Usuario.Button5Click(Sender: TObject);
+procedure TAlterarUsuario.Button5Click(Sender: TObject);
 begin
-                 dtmusuario.ADOTable1.open ;
+                 BDUsuarios.ADOTable1.open ;
        aux := DBGrid1.DataSource.DataSet.FieldValues['codigo'];
-       if dtmusuario.ADOTable1.Locate('codigo',aux,[])    then
+       if BDUsuarios.ADOTable1.Locate('codigo',aux,[])    then
        begin
         DBGrid1.DataSource.DataSet.Delete;
 
@@ -139,11 +141,21 @@ begin
        end;
 end;
 
-procedure TformAlter_Usuario.FormClose(Sender: TObject;
+procedure TAlterarUsuario.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
 Self.Destroy;
-Form2.show;
+TelaInicial.show;
+end;
+
+procedure TAlterarUsuario.Button6Click(Sender: TObject);
+
+begin
+  Edit1.Text:='';
+  Edit2.Text:='';
+  Edit3.Text:='';
+  TelaInicial.show;
+  Self.Hide;
 end;
 
 end.
