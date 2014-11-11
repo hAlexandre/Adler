@@ -11,7 +11,10 @@ uses
   Form_funcionario in 'Form_funcionario.pas' {FFormusuario},
   Form_usuario in 'Form_usuario.pas' {InserirUsuario},
   Form_alterarusuario in 'Form_alterarusuario.pas' {ERROUSUARIO},
-  Alterar__usuario in 'Alterar__usuario.pas' {AlterarUsuario};
+  Alterar__usuario in 'Alterar__usuario.pas' {AlterarUsuario},
+  inserirfuncionario in 'inserirfuncionario.pas' {Form_inserirfuncionario},
+  Unit4 in 'Unit4.pas',
+  datamodule_funcionarios_OK in 'datamodule_funcionarios_OK.pas' {datamodulefuncionarios: TDataModule};
 
 {$R *.res}
 
@@ -24,5 +27,8 @@ begin
   Application.CreateForm(TFFormusuario, FFormusuario);
   Application.CreateForm(TInserirUsuario, InserirUsuario);
   Application.CreateForm(TAlterarUsuario, AlterarUsuario);
+  Application.CreateForm(TForm_inserirfuncionario, Form_inserirfuncionario);
+  Application.CreateForm(Tdatamodulefuncionarios, datamodulefuncionarios);
+
   Application.Run;
 end.

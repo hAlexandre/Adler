@@ -41,6 +41,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure eladeLogin1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -89,6 +90,13 @@ procedure TInserirJogo.Button3Click(Sender: TObject);
 begin
   TelaInicial.show;
   Self.Hide;
+end;
+
+procedure TInserirJogo.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+Self.Destroy;
+TelaInicial.show;
 end;
 
 end.

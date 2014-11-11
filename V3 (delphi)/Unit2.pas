@@ -39,6 +39,7 @@ type
     procedure eladelogin1Click(Sender: TObject);
     procedure Inserirusurio1Click(Sender: TObject);
     procedure AlterarUsurio1Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -52,7 +53,7 @@ implementation
 
 uses Unit1, Unit3, Form_alterarjogo, datamodule_usuarios, Form_usuario,
   Form_alterarusuario, Alterar__usuario, datamodule_jogos,
-  Form_funcionario;
+  Form_funcionario, Unit4, inserirfuncionario;
 
 {$R *.dfm}
 
@@ -101,6 +102,14 @@ AlterarUsuario:=TAlterarUsuario.Create(Application);
 AlterarUsuario.show;
 AlterarUsuario.DBGrid1.Enabled:=True;
 AlterarUsuario.DBGrid1.Refresh;
+
+end;
+
+procedure TTelaInicial.Button5Click(Sender: TObject);
+begin
+Form_inserirfuncionario:=TForm_inserirfuncionario.Create(Application);
+Form_inserirfuncionario.show;
+Self.hide;
 
 end;
 

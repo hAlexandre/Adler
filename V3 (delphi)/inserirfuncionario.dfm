@@ -1,9 +1,9 @@
-object InserirJogo: TInserirJogo
-  Left = 286
-  Top = 133
-  Width = 1043
-  Height = 744
-  Caption = 'Inserir Jogo'
+object Form_inserirfuncionario: TForm_inserirfuncionario
+  Left = -8
+  Top = -8
+  Width = 1552
+  Height = 880
+  Caption = 'INserirFuncionario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,15 +12,14 @@ object InserirJogo: TInserirJogo
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
-  WindowState = wsMaximized
   OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
-  object Fundo_InsJogo: TImage
-    Left = -6
-    Top = 0
-    Width = 1469
-    Height = 747
+  object ImagemInserirusuario: TImage
+    Left = -73
+    Top = -48
+    Width = 1554
+    Height = 817
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3158,9 +3157,23 @@ object InserirJogo: TInserirJogo
       0C56CBE685E42220FFD9}
     Stretch = True
   end
+  object Label2: TLabel
+    Left = 596
+    Top = 272
+    Width = 76
+    Height = 27
+    Caption = 'Salario'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
   object Label1: TLabel
-    Left = 569
-    Top = 213
+    Left = 596
+    Top = 166
     Width = 59
     Height = 27
     Caption = 'Nome'
@@ -3172,12 +3185,12 @@ object InserirJogo: TInserirJogo
     ParentFont = False
     Transparent = True
   end
-  object Label2: TLabel
-    Left = 564
-    Top = 325
-    Width = 61
+  object Label3: TLabel
+    Left = 596
+    Top = 220
+    Width = 63
     Height = 27
-    Caption = 'Pre'#231'o'
+    Caption = 'Cargo'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -24
@@ -3186,12 +3199,40 @@ object InserirJogo: TInserirJogo
     ParentFont = False
     Transparent = True
   end
-  object Label3: TLabel
-    Left = 564
-    Top = 268
-    Width = 106
+  object Label4: TLabel
+    Left = 596
+    Top = 329
+    Width = 40
     Height = 27
-    Caption = 'Descri'#231#227'o'
+    Caption = 'CPF'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label5: TLabel
+    Left = 596
+    Top = 385
+    Width = 99
+    Height = 27
+    Caption = 'Endereco'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label6: TLabel
+    Left = 596
+    Top = 442
+    Width = 97
+    Height = 27
+    Caption = 'Historico'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -24
@@ -3201,11 +3242,11 @@ object InserirJogo: TInserirJogo
     Transparent = True
   end
   object Label7: TLabel
-    Left = 429
-    Top = 70
-    Width = 658
+    Left = 369
+    Top = 125
+    Width = 710
     Height = 29
-    Caption = 'Preencha os campos abaixo para criar um novo usu'#225'rio'
+    Caption = 'Preencha os campos abaixo para criar um novo Funcion'#225'rio'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -24
@@ -3215,8 +3256,8 @@ object InserirJogo: TInserirJogo
     Transparent = True
   end
   object Label8: TLabel
-    Left = 626
-    Top = 211
+    Left = 661
+    Top = 177
     Width = 8
     Height = 16
     Caption = '*'
@@ -3228,9 +3269,9 @@ object InserirJogo: TInserirJogo
     ParentFont = False
     Transparent = True
   end
-  object Label4: TLabel
+  object Label9: TLabel
     Left = 668
-    Top = 266
+    Top = 226
     Width = 8
     Height = 16
     Caption = '*'
@@ -3242,22 +3283,9 @@ object InserirJogo: TInserirJogo
     ParentFont = False
     Transparent = True
   end
-  object Label5: TLabel
-    Left = 827
-    Top = 165
-    Width = 4
-    Height = 16
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clRed
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Transparent = True
-  end
-  object Label6: TLabel
-    Left = 626
-    Top = 327
+  object Label10: TLabel
+    Left = 674
+    Top = 276
     Width = 8
     Height = 16
     Caption = '*'
@@ -3267,54 +3295,138 @@ object InserirJogo: TInserirJogo
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
+    Transparent = True
+  end
+  object Label11: TLabel
+    Left = 644
+    Top = 337
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label12: TLabel
+    Left = 705
+    Top = 414
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label13: TLabel
+    Left = 698
+    Top = 390
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label14: TLabel
+    Left = 607
+    Top = 621
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label15: TLabel
+    Left = 622
+    Top = 621
+    Width = 100
+    Height = 13
+    Caption = 'Campos Obrigat'#243'rios'
     Transparent = True
   end
   object Edit1: TEdit
-    Left = 567
-    Top = 243
-    Width = 225
-    Height = 25
+    Left = 596
+    Top = 197
+    Width = 137
+    Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
-    Left = 567
-    Top = 299
-    Width = 433
-    Height = 25
+    Left = 596
+    Top = 247
+    Width = 137
+    Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
-    Left = 567
-    Top = 356
-    Width = 121
-    Height = 25
+    Left = 596
+    Top = 307
+    Width = 137
+    Height = 21
     TabOrder = 2
   end
-  object Button1: TButton
-    Left = 575
-    Top = 453
-    Width = 113
-    Height = 41
-    Caption = 'Inserir'
+  object Edit4: TEdit
+    Left = 596
+    Top = 361
+    Width = 137
+    Height = 21
     TabOrder = 3
+  end
+  object Edit5: TEdit
+    Left = 596
+    Top = 416
+    Width = 137
+    Height = 21
+    TabOrder = 4
+  end
+  object Edit6: TEdit
+    Left = 596
+    Top = 472
+    Width = 137
+    Height = 21
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 597
+    Top = 510
+    Width = 136
+    Height = 48
+    Caption = 'Inserir'
+    TabOrder = 6
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 716
-    Top = 460
-    Width = 88
-    Height = 34
+    Left = 626
+    Top = 577
+    Width = 75
+    Height = 25
     Caption = 'Descartar'
-    TabOrder = 4
-    OnClick = Button2Click
+    TabOrder = 7
   end
   object Button3: TButton
-    Left = 31
-    Top = 12
-    Width = 159
-    Height = 50
+    Left = 61
+    Top = 46
+    Width = 148
+    Height = 37
     Caption = '<< VOLTAR'
-    TabOrder = 5
+    TabOrder = 8
     OnClick = Button3Click
   end
   object MainMenu1: TMainMenu
@@ -3355,9 +3467,8 @@ object InserirJogo: TInserirJogo
         Caption = 'Remover Funcion'#225'rio'
       end
     end
-    object eladeLogin1: TMenuItem
-      Caption = 'Tela de Login'
-      OnClick = eladeLogin1Click
+    object eladelogin1: TMenuItem
+      Caption = 'Tela de login'
     end
   end
 end
