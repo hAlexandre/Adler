@@ -1,9 +1,8 @@
 object TelaInicial: TTelaInicial
-  Left = 239
-  Top = 55
-  Width = 1181
-  Height = 704
-  HorzScrollBar.Position = 122
+  Left = -8
+  Top = -8
+  Width = 1870
+  Height = 1096
   Caption = 'Tela Principal'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -18,10 +17,10 @@ object TelaInicial: TTelaInicial
   PixelsPerInch = 96
   TextHeight = 13
   object Background: TImage
-    Left = -120
-    Top = 0
-    Width = 1469
-    Height = 747
+    Left = -510
+    Top = -136
+    Width = 2191
+    Height = 1089
     Picture.Data = {
       0A544A504547496D616765E9580100FFD8FFE000104A46494600010100000100
       010000FFFE003B43524541544F523A2067642D6A7065672076312E3020287573
@@ -2786,7 +2785,7 @@ object TelaInicial: TTelaInicial
     Stretch = True
   end
   object Label1: TLabel
-    Left = 241
+    Left = 363
     Top = 37
     Width = 715
     Height = 85
@@ -2800,7 +2799,7 @@ object TelaInicial: TTelaInicial
     Transparent = True
   end
   object Label2: TLabel
-    Left = 39
+    Left = 9
     Top = 177
     Width = 329
     Height = 38
@@ -2814,7 +2813,7 @@ object TelaInicial: TTelaInicial
     Transparent = True
   end
   object Label3: TLabel
-    Left = 571
+    Left = 442
     Top = 177
     Width = 90
     Height = 38
@@ -2828,7 +2827,7 @@ object TelaInicial: TTelaInicial
     Transparent = True
   end
   object Label4: TLabel
-    Left = 939
+    Left = 691
     Top = 184
     Width = 201
     Height = 38
@@ -2841,9 +2840,23 @@ object TelaInicial: TTelaInicial
     ParentFont = False
     Transparent = True
   end
+  object Label5: TLabel
+    Left = 1013
+    Top = 192
+    Width = 157
+    Height = 38
+    Caption = 'Empresas'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -32
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
   object Button1: TButton
-    Left = 88
-    Top = 280
+    Left = 66
+    Top = 272
     Width = 215
     Height = 67
     Caption = 'Inserir &Usu'#225'rio'
@@ -2857,8 +2870,8 @@ object TelaInicial: TTelaInicial
     OnClick = Inserirusurio1Click
   end
   object Button2: TButton
-    Left = 88
-    Top = 401
+    Left = 66
+    Top = 385
     Width = 215
     Height = 69
     Caption = 'Consultar U&su'#225'rio'
@@ -2872,8 +2885,8 @@ object TelaInicial: TTelaInicial
     OnClick = AlterarUsurio1Click
   end
   object Button3: TButton
-    Left = 510
-    Top = 280
+    Left = 374
+    Top = 272
     Width = 215
     Height = 67
     Caption = 'Inserir &Jogo'
@@ -2887,8 +2900,8 @@ object TelaInicial: TTelaInicial
     OnClick = Inserirjogo1Click
   end
   object Button4: TButton
-    Left = 510
-    Top = 401
+    Left = 374
+    Top = 385
     Width = 215
     Height = 69
     Caption = 'Consultar J&ogo'
@@ -2902,8 +2915,8 @@ object TelaInicial: TTelaInicial
     OnClick = Alterarjogo1Click
   end
   object Button5: TButton
-    Left = 932
-    Top = 280
+    Left = 682
+    Top = 272
     Width = 215
     Height = 67
     Caption = 'Inserir &Funcion'#225'rio'
@@ -2917,8 +2930,8 @@ object TelaInicial: TTelaInicial
     OnClick = Button5Click
   end
   object Button6: TButton
-    Left = 932
-    Top = 401
+    Left = 683
+    Top = 385
     Width = 215
     Height = 69
     Caption = 'Consultar Fun&cion'#225'rio'
@@ -2929,15 +2942,46 @@ object TelaInicial: TTelaInicial
     Font.Style = []
     ParentFont = False
     TabOrder = 5
+    OnClick = Button6Click
   end
   object Button7: TButton
-    Left = 515
+    Left = 637
     Top = 645
     Width = 190
     Height = 50
     Caption = 'Sair do Sist&ema'
     TabOrder = 6
     OnClick = eladelogin1Click
+  end
+  object Button8: TButton
+    Left = 990
+    Top = 272
+    Width = 215
+    Height = 67
+    Caption = 'Inserir Empresa'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 992
+    Top = 385
+    Width = 215
+    Height = 67
+    Caption = 'Consultar empresa'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = Button8Click
   end
   object MainMenu1: TMainMenu
     Top = 65528

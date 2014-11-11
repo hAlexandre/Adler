@@ -142,7 +142,8 @@ end;
 procedure TConsultarJogo.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
-Self.Destroy;
+Self.DestroyHandle;
+TelaInicial.show;
 end;
 
 procedure TConsultarJogo.Button6Click(Sender: TObject);

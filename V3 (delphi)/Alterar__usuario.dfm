@@ -45,7 +45,7 @@ object AlterarUsuario: TAlterarUsuario
     Visible = False
   end
   object Image1: TImage
-    Left = -8
+    Left = -16
     Top = -181
     Width = 1461
     Height = 741

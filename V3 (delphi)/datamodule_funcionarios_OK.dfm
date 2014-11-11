@@ -1,7 +1,7 @@
 object datamodulefuncionarios: Tdatamodulefuncionarios
   OldCreateOrder = False
-  Left = 367
-  Top = 287
+  Left = 366
+  Top = 291
   Height = 201
   Width = 448
   object ADOTable1: TADOTable

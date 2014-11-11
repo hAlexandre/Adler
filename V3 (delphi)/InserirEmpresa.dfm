@@ -1,9 +1,9 @@
-object ConsultarJogo: TConsultarJogo
-  Left = 6
-  Top = 321
-  Width = 1552
-  Height = 880
-  Caption = 'Altera Jogo'
+object Insere_empresa: TInsere_empresa
+  Left = -8
+  Top = -8
+  Width = 1870
+  Height = 1096
+  Caption = 'Iserir_empresa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,14 +13,13 @@ object ConsultarJogo: TConsultarJogo
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
-  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
-  object Image1: TImage
-    Left = 8
-    Top = 0
-    Width = 1463
-    Height = 747
+  object ImagemInserirusuario: TImage
+    Left = -209
+    Top = -402
+    Width = 1938
+    Height = 1067
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3158,33 +3157,12 @@ object ConsultarJogo: TConsultarJogo
       0C56CBE685E42220FFD9}
     Stretch = True
   end
-  object Label1: TLabel
-    Left = 532
-    Top = 61
-    Width = 435
-    Height = 27
-    Caption = 'Preencha os Campos para alterar o Jogo'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -24
-    Font.Name = 'Britannic Bold'
-    Font.Style = []
-    ParentFont = False
-    Transparent = True
-  end
-  object SpeedButton1: TSpeedButton
-    Left = 160
-    Top = 424
-    Width = 113
-    Height = 33
-    Caption = 'Aterar Registro'
-  end
   object Label2: TLabel
-    Left = 660
-    Top = 173
-    Width = 61
+    Left = 612
+    Top = 296
+    Width = 52
     Height = 27
-    Caption = 'Preco'
+    Caption = 'CNPJ'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -24
@@ -3193,135 +3171,263 @@ object ConsultarJogo: TConsultarJogo
     ParentFont = False
     Transparent = True
   end
-  object Button1: TButton
-    Left = 632
-    Top = 593
-    Width = 105
-    Height = 56
-    Caption = 'Pesquisar por nome'
-    TabOrder = 0
-    OnClick = Button1Click
+  object Label1: TLabel
+    Left = 612
+    Top = 238
+    Width = 136
+    Height = 27
+    Caption = 'Raz'#227'o Social'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label3: TLabel
+    Left = 628
+    Top = 180
+    Width = 59
+    Height = 27
+    Caption = 'Nome'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label4: TLabel
+    Left = 612
+    Top = 353
+    Width = 99
+    Height = 27
+    Caption = 'Endere'#231'o'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label5: TLabel
+    Left = 796
+    Top = 177
+    Width = 90
+    Height = 27
+    Caption = 'Telefone'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label6: TLabel
+    Left = 796
+    Top = 258
+    Width = 60
+    Height = 27
+    Caption = 'Email'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label7: TLabel
+    Left = 369
+    Top = 125
+    Width = 678
+    Height = 29
+    Caption = 'Preencha os campos abaixo para cadastrar uma empresa'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label8: TLabel
+    Left = 693
+    Top = 185
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label9: TLabel
+    Left = 756
+    Top = 250
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label10: TLabel
+    Left = 682
+    Top = 300
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label11: TLabel
+    Left = 668
+    Top = 353
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label12: TLabel
+    Left = 897
+    Top = 182
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label13: TLabel
+    Left = 858
+    Top = 262
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label14: TLabel
+    Left = 799
+    Top = 357
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label15: TLabel
+    Left = 814
+    Top = 360
+    Width = 100
+    Height = 13
+    Caption = 'Campos Obrigat'#243'rios'
+    Transparent = True
   end
   object Edit1: TEdit
-    Left = 570
-    Top = 559
-    Width = 226
+    Left = 612
+    Top = 213
+    Width = 137
+    Height = 21
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 612
+    Top = 271
+    Width = 137
+    Height = 21
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 612
+    Top = 323
+    Width = 137
     Height = 21
     TabOrder = 2
   end
-  object DBGrid1: TDBGrid
-    Left = 360
-    Top = 106
-    Width = 779
-    Height = 305
-    DataSource = DataSource1
-    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete]
-    TabOrder = 1
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
-    Columns = <
-      item
-        Expanded = False
-        FieldName = 'Codigo'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'Nome'
-        Width = 257
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'Descricao'
-        Width = 194
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'Preco'
-        Width = 230
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'Desenvolvedor'
-        Width = 316
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'Censura'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'Genero'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'Requisitos'
-        Visible = True
-      end>
-  end
-  object Button3: TButton
-    Left = 358
-    Top = 427
-    Width = 112
-    Height = 33
-    Caption = 'Alterar registro'
+  object Edit4: TEdit
+    Left = 612
+    Top = 385
+    Width = 137
+    Height = 21
     TabOrder = 3
-    OnClick = Button3Click
   end
-  object Edit2: TEdit
-    Left = 657
-    Top = 204
-    Width = 121
+  object Edit5: TEdit
+    Left = 788
+    Top = 216
+    Width = 137
     Height = 21
     TabOrder = 4
-    Visible = False
   end
-  object Button4: TButton
-    Left = 656
-    Top = 231
-    Width = 120
-    Height = 41
-    Caption = 'Descartar altera'#231#245'es'
+  object Edit6: TEdit
+    Left = 788
+    Top = 288
+    Width = 137
+    Height = 21
     TabOrder = 5
-    Visible = False
-    OnClick = Button4Click
   end
-  object Button5: TButton
-    Left = 656
-    Top = 278
-    Width = 121
-    Height = 41
-    Caption = 'Salvar altera'#231#245'es'
+  object Button1: TButton
+    Left = 741
+    Top = 413
+    Width = 136
+    Height = 48
+    Caption = '&Inserir'
     TabOrder = 6
-    Visible = False
-    OnClick = Button5Click
-  end
-  object Button6: TButton
-    Left = 488
-    Top = 427
-    Width = 96
-    Height = 33
-    Caption = 'Excluir registro'
-    TabOrder = 7
-    OnClick = Button6Click
+    OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 31
-    Top = 24
-    Width = 104
-    Height = 38
-    Caption = '<< VOLTAR'
+    Left = 778
+    Top = 468
+    Width = 75
+    Height = 25
+    Caption = '&Descartar'
+    TabOrder = 7
+  end
+  object Button3: TButton
+    Left = 61
+    Top = 46
+    Width = 148
+    Height = 37
+    Caption = '<< &VOLTAR'
     TabOrder = 8
-    OnClick = Button2Click
+    OnClick = Button3Click
   end
   object MainMenu1: TMainMenu
     Top = 65528
@@ -3363,22 +3469,6 @@ object ConsultarJogo: TConsultarJogo
     end
     object eladelogin1: TMenuItem
       Caption = 'Tela de login'
-      OnClick = eladelogin1Click
     end
-  end
-  object ADOQuery1: TADOQuery
-    Connection = BDJogos.ADOConnection1
-    CursorType = ctStatic
-    DataSource = BDJogos.DataSource1
-    Parameters = <>
-    SQL.Strings = (
-      'Select * from Jogo')
-    Left = 32
-    Top = 200
-  end
-  object DataSource1: TDataSource
-    DataSet = ADOQuery1
-    Left = 72
-    Top = 192
   end
 end

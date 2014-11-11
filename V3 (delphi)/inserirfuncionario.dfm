@@ -1,6 +1,6 @@
 object Form_inserirfuncionario: TForm_inserirfuncionario
-  Left = 274
-  Top = 147
+  Left = 138
+  Top = 156
   Width = 1378
   Height = 780
   Caption = 'INserirFuncionario'
@@ -12,6 +12,7 @@ object Form_inserirfuncionario: TForm_inserirfuncionario
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
+  WindowState = wsMaximized
   OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13

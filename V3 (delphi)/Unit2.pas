@@ -32,6 +32,9 @@ type
     Button5: TButton;
     Button6: TButton;
     Button7: TButton;
+    Button8: TButton;
+    Button9: TButton;
+    Label5: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure Inserirjogo1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
@@ -40,6 +43,8 @@ type
     procedure Inserirusurio1Click(Sender: TObject);
     procedure AlterarUsurio1Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -53,7 +58,8 @@ implementation
 
 uses Unit1, Unit3, Form_alterarjogo, datamodule_usuarios, Form_usuario,
   Form_alterarusuario, Alterar__usuario, datamodule_jogos,
-  Form_funcionario, Unit4, inserirfuncionario;
+  Form_funcionario, Unit4, inserirfuncionario, Consultar_funcionario,
+  datamodule_funcionarios_OK, InserirEmpresa, Consultar_empresa;
 
 {$R *.dfm}
 
@@ -115,6 +121,25 @@ begin
 Form_inserirfuncionario:=TForm_inserirfuncionario.Create(Application);
 Form_inserirfuncionario.show;
 Self.hide;
+
+end;
+
+procedure TTelaInicial.Button6Click(Sender: TObject);
+begin
+Self.hide;
+Consulta_FUncionarios:=TConsulta_FUncionarios.Create(Application);
+Consulta_FUncionarios.show;
+end;
+
+procedure TTelaInicial.Button8Click(Sender: TObject);
+begin
+
+
+Self.Hide;
+Form_Consultar_Emrpesa := TForm_Consultar_Emrpesa.Create(Application);
+Form_Consultar_Emrpesa.show;
+             Form_Consultar_Emrpesa.DBGrid1.Refresh;
+
 
 end;
 

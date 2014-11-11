@@ -4,5 +4,7 @@ interface
 
 implementation
 
+uses Form_alterarusuario;
+
 end.
  

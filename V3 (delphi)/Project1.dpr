@@ -14,7 +14,12 @@ uses
   Alterar__usuario in 'Alterar__usuario.pas' {AlterarUsuario},
   inserirfuncionario in 'inserirfuncionario.pas' {Form_inserirfuncionario},
   Unit4 in 'Unit4.pas',
-  datamodule_funcionarios_OK in 'datamodule_funcionarios_OK.pas' {datamodulefuncionarios: TDataModule};
+  datamodule_funcionarios_OK in 'datamodule_funcionarios_OK.pas' {datamodulefuncionarios: TDataModule},
+  Consultar_funcionario in 'Consultar_funcionario.pas' {Consulta_FUncionarios},
+  Datamodule_funcionarios in 'Datamodule_funcionarios.pas' {DataModule5: TDataModule},
+  Datamodule_Empresas in 'Datamodule_Empresas.pas' {Datamoduleempresas: TDataModule},
+  InserirEmpresa in 'InserirEmpresa.pas' {Insere_empresa},
+  Consultar_empresa in 'Consultar_empresa.pas' {Form_Consultar_Emrpesa};
 
 {$R *.res}
 
@@ -29,6 +34,10 @@ begin
   Application.CreateForm(TAlterarUsuario, AlterarUsuario);
   Application.CreateForm(TForm_inserirfuncionario, Form_inserirfuncionario);
   Application.CreateForm(Tdatamodulefuncionarios, datamodulefuncionarios);
-
+  Application.CreateForm(TConsulta_FUncionarios, Consulta_FUncionarios);
+  Application.CreateForm(TDataModule5, DataModule5);
+  Application.CreateForm(TDatamoduleempresas, Datamoduleempresas);
+  Application.CreateForm(TInsere_empresa, Insere_empresa);
+  Application.CreateForm(TForm_Consultar_Emrpesa, Form_Consultar_Emrpesa);
   Application.Run;
 end.

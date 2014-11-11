@@ -76,7 +76,7 @@ uses datamodule_jogos, datamodule_usuarios, Form_alterarjogo,
 
 procedure TAlterarUsuario.Button1Click(Sender: TObject);
 begin
- DBGrid1.Enabled:=True;
+               DBGrid1.Enabled:=True;
                  ADOQuery1.Close; {Fecha a query}
                  ADOQuery1.SQL.Clear; {Limpa o conteúdo da propriedade SQL}
                  ADOQuery1.SQL.Add('SELECT * from Usuariodesistema');
