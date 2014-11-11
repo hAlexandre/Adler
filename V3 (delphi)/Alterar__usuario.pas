@@ -44,6 +44,7 @@ type
     Edit5: TEdit;
     SpeedButton1: TSpeedButton;
     Label8: TLabel;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -84,8 +85,14 @@ begin
 end;
 
 procedure TAlterarUsuario.Button2Click(Sender: TObject);
+var confirma : integer;
 begin
-
+confirma := MessageDlg('Deseja mesmo voltar?',mtCustom, mbOKCancel, 0);
+       if confirma = mrOK then
+        begin
+          Self.Hide;
+          TelaInicial.Show;
+        end;
     Edit1.Visible:=False;
     Edit2.Visible:=True;
     Edit3.Visible:=True;
@@ -153,13 +160,19 @@ begin
     DBGrid1.Visible:=True;
     Edit2.Visible:=False;
     Edit3.Visible:=False;
+    Edit4.Visible:=False;
+    Edit5.Visible:=False;
     Button3.Visible:=False;
     Button4.Visible:=False;
     DBGrid1.Refresh;
     Edit2.Text:='';
     Edit3.Text:='';
+    Edit4.Text:='';
+    Edit5.Text:='';
     Label1.Visible:=False;
     Label2.Visible:=False;
+    Button5.Visible:=True;
+    SpeedButton1.Visible:=True;
     ShowMessage('Alteração realizada com sucesso');
 
 

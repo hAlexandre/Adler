@@ -1,26 +1,26 @@
 object ConsultarJogo: TConsultarJogo
-  Left = 773
-  Top = 145
-  Width = 872
-  Height = 574
+  Left = 237
+  Top = 118
+  Width = 1585
+  Height = 937
   Caption = 'Altera Jogo'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -14
+  Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
   OnClose = FormClose
-  PixelsPerInch = 120
-  TextHeight = 17
+  PixelsPerInch = 96
+  TextHeight = 13
   object Image1: TImage
-    Left = 0
+    Left = 8
     Top = 0
-    Width = 1913
-    Height = 977
+    Width = 1463
+    Height = 747
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3159,59 +3159,79 @@ object ConsultarJogo: TConsultarJogo
     Stretch = True
   end
   object Label1: TLabel
-    Left = 696
-    Top = 80
-    Width = 543
-    Height = 33
+    Left = 532
+    Top = 61
+    Width = 435
+    Height = 27
     Caption = 'Preencha os Campos para alterar o Jogo'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -30
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 160
+    Top = 424
+    Width = 113
+    Height = 33
+    Caption = 'Aterar Registro'
+  end
+  object Label2: TLabel
+    Left = 1196
+    Top = 437
+    Width = 61
+    Height = 27
+    Caption = 'Preco'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Button1: TButton
-    Left = 826
-    Top = 775
-    Width = 138
-    Height = 74
+    Left = 632
+    Top = 593
+    Width = 105
+    Height = 56
     Caption = 'Pesquisar por nome'
     TabOrder = 0
     OnClick = Button1Click
   end
   object Edit1: TEdit
-    Left = 746
-    Top = 731
-    Width = 295
-    Height = 25
+    Left = 570
+    Top = 559
+    Width = 226
+    Height = 21
     TabOrder = 2
   end
   object DBGrid1: TDBGrid
-    Left = 471
-    Top = 139
-    Width = 1018
-    Height = 398
+    Left = 360
+    Top = 106
+    Width = 779
+    Height = 305
     DataSource = DataSource1
     Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete]
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
-    TitleFont.Height = -14
+    TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
     Columns = <
       item
         Expanded = False
-        FieldName = 'Nome'
-        Width = 257
+        FieldName = 'Codigo'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'Preco'
-        Width = 230
+        FieldName = 'Nome'
+        Width = 257
         Visible = True
       end
       item
@@ -3222,62 +3242,83 @@ object ConsultarJogo: TConsultarJogo
       end
       item
         Expanded = False
+        FieldName = 'Preco'
+        Width = 230
+        Visible = True
+      end
+      item
+        Expanded = False
         FieldName = 'Desenvolvedor'
         Width = 316
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Censura'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Genero'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Requisitos'
         Visible = True
       end>
   end
   object Button3: TButton
-    Left = 468
-    Top = 559
-    Width = 147
-    Height = 43
+    Left = 358
+    Top = 427
+    Width = 112
+    Height = 33
     Caption = 'Alterar registro'
     TabOrder = 3
     OnClick = Button3Click
   end
   object Edit2: TEdit
-    Left = 1644
-    Top = 235
-    Width = 158
-    Height = 25
+    Left = 1193
+    Top = 468
+    Width = 121
+    Height = 21
     TabOrder = 4
     Visible = False
   end
   object Button4: TButton
-    Left = 1642
-    Top = 156
-    Width = 158
-    Height = 53
+    Left = 1192
+    Top = 495
+    Width = 120
+    Height = 41
     Caption = 'Descartar altera'#231#245'es'
     TabOrder = 5
     Visible = False
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 1643
-    Top = 92
-    Width = 158
-    Height = 53
+    Left = 1192
+    Top = 542
+    Width = 121
+    Height = 41
     Caption = 'Salvar altera'#231#245'es'
     TabOrder = 6
     Visible = False
     OnClick = Button5Click
   end
   object Button6: TButton
-    Left = 638
-    Top = 559
-    Width = 126
-    Height = 43
+    Left = 488
+    Top = 427
+    Width = 96
+    Height = 33
     Caption = 'Excluir registro'
     TabOrder = 7
     OnClick = Button6Click
   end
   object Button2: TButton
-    Left = 40
-    Top = 32
-    Width = 137
-    Height = 49
+    Left = 31
+    Top = 24
+    Width = 104
+    Height = 38
     Caption = '<< VOLTAR'
     TabOrder = 8
     OnClick = Button2Click

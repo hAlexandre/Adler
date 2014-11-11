@@ -61,18 +61,18 @@ var
 
 implementation
 
-uses Unit2, datamodule_usuarios, datamodule_jogos;
+uses Unit2, datamodule_usuarios, datamodule_jogos, Unit1;
 
 {$R *.dfm}
 
 procedure TInserirUsuario.eladelogin1Click(Sender: TObject);
 var confirma : integer;
 begin
-confirma := MessageDlg('Deseja mesmo sair?',mtCustom, mbOKCancel, 0);
+confirma := MessageDlg('Deseja mesmo voltar?',mtCustom, mbOKCancel, 0);
        if confirma = mrOK then
         begin
           Self.Hide;
-          TelaLogin.Show;
+          TelaInicial.Show;
         end;
 end;
 

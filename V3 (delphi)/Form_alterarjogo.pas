@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Menus, StdCtrls, DB, ADODB, Grids, DBGrids, jpeg, ExtCtrls;
+  Dialogs, Menus, StdCtrls, DB, ADODB, Grids, DBGrids, jpeg, ExtCtrls,
+  Buttons;
 
 type
   TConsultarJogo = class(TForm)
@@ -35,6 +36,8 @@ type
     Image1: TImage;
     Label1: TLabel;
     Button2: TButton;
+    SpeedButton1: TSpeedButton;
+    Label2: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
@@ -94,7 +97,8 @@ begin
   Button1.Enabled:=True;
   Button5.Visible:=False;
   Button2.Enabled:=True;
-  
+  Label2.Visible := False;
+
 
 
 end;
@@ -107,7 +111,7 @@ begin
     begin
       BDJogos.ADOTable1.Open;
       BDJogos.ADOTable1.Edit;
-      BDJogos.ADOTable1.FieldByName('Nome').Value:=edit2.Text;
+      BDJogos.ADOTable1.FieldByName('Preco').Value:=edit2.Text;
       BDJogos.ADOTable1.Post;
     end;
     ADOQuery1.Refresh;
@@ -119,6 +123,7 @@ begin
     Button3.Visible:=True;
     Button4.Visible:=False;
     DBGrid1.Refresh;
+    Label2.Visible:=False;
 
 end;
 

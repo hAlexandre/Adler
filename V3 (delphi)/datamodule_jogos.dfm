@@ -1,7 +1,7 @@
 object BDJogos: TBDJogos
   OldCreateOrder = False
-  Left = 998
-  Top = 235
+  Left = 1401
+  Top = 271
   Height = 146
   Width = 299
   object ADOConnection1: TADOConnection
@@ -29,16 +29,28 @@ object BDJogos: TBDJogos
       FieldName = 'Descricao'
       Size = 255
     end
+    object ADOTable1Codigo: TAutoIncField
+      FieldName = 'Codigo'
+      ReadOnly = True
+    end
+    object ADOTable1Censura: TWideStringField
+      FieldName = 'Censura'
+      Size = 255
+    end
+    object ADOTable1Genero: TWideStringField
+      FieldName = 'Genero'
+      Size = 255
+    end
+    object ADOTable1Requisitos: TWideStringField
+      FieldName = 'Requisitos'
+      Size = 255
+    end
     object ADOTable1Preco: TIntegerField
       FieldName = 'Preco'
     end
     object ADOTable1Desenvolvedor: TWideStringField
       FieldName = 'Desenvolvedor'
       Size = 255
-    end
-    object ADOTable1Codigo: TAutoIncField
-      FieldName = 'Codigo'
-      ReadOnly = True
     end
   end
   object DataSource1: TDataSource

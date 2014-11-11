@@ -11,10 +11,13 @@ type
     ADOTable1: TADOTable;
     DataSource1: TDataSource;
     ADOTable1Nome: TWideStringField;
-    ADOTable1Preco: TIntegerField;
     ADOTable1Descricao: TWideStringField;
-    ADOTable1Desenvolvedor: TWideStringField;
     ADOTable1Codigo: TAutoIncField;
+    ADOTable1Censura: TWideStringField;
+    ADOTable1Genero: TWideStringField;
+    ADOTable1Requisitos: TWideStringField;
+    ADOTable1Preco: TIntegerField;
+    ADOTable1Desenvolvedor: TWideStringField;
   private
     { Private declarations }
   public

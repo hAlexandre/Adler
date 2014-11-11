@@ -1,26 +1,26 @@
 object InserirJogo: TInserirJogo
-  Left = 286
-  Top = 133
-  Width = 1043
-  Height = 744
+  Left = 789
+  Top = 37
+  Width = 927
+  Height = 1080
   Caption = 'Inserir Jogo'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -14
+  Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
   OnClose = FormClose
-  PixelsPerInch = 120
-  TextHeight = 17
+  PixelsPerInch = 96
+  TextHeight = 13
   object Fundo_InsJogo: TImage
-    Left = -8
-    Top = 0
-    Width = 1921
-    Height = 977
+    Left = -382
+    Top = -144
+    Width = 1871
+    Height = 1041
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3159,163 +3159,303 @@ object InserirJogo: TInserirJogo
     Stretch = True
   end
   object Label1: TLabel
-    Left = 744
-    Top = 279
-    Width = 74
-    Height = 33
+    Left = 561
+    Top = 117
+    Width = 59
+    Height = 27
     Caption = 'Nome'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -30
+    Font.Height = -24
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label2: TLabel
-    Left = 738
-    Top = 425
-    Width = 77
-    Height = 33
-    Caption = 'Pre'#231'o'
+    Left = 556
+    Top = 365
+    Width = 88
+    Height = 27
+    Caption = 'Censura'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -30
+    Font.Height = -24
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label3: TLabel
-    Left = 738
-    Top = 350
-    Width = 132
-    Height = 33
+    Left = 556
+    Top = 180
+    Width = 106
+    Height = 27
     Caption = 'Descri'#231#227'o'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -30
+    Font.Height = -24
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label7: TLabel
-    Left = 561
-    Top = 92
-    Width = 835
-    Height = 36
+    Left = 429
+    Top = 70
+    Width = 658
+    Height = 29
     Caption = 'Preencha os campos abaixo para criar um novo usu'#225'rio'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -30
+    Font.Height = -24
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label8: TLabel
-    Left = 819
-    Top = 276
-    Width = 11
-    Height = 21
+    Left = 626
+    Top = 115
+    Width = 8
+    Height = 16
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -17
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label4: TLabel
-    Left = 874
-    Top = 348
-    Width = 11
-    Height = 21
+    Left = 660
+    Top = 178
+    Width = 8
+    Height = 16
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -17
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label5: TLabel
-    Left = 1081
-    Top = 216
-    Width = 5
-    Height = 21
+    Left = 827
+    Top = 165
+    Width = 4
+    Height = 16
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -17
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label6: TLabel
-    Left = 819
-    Top = 428
-    Width = 11
-    Height = 21
+    Left = 618
+    Top = 303
+    Width = 8
+    Height = 16
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -17
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label9: TLabel
+    Left = 556
+    Top = 301
+    Width = 61
+    Height = 27
+    Caption = 'Pre'#231'o'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label10: TLabel
+    Left = 642
+    Top = 359
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label11: TLabel
+    Left = 556
+    Top = 429
+    Width = 76
+    Height = 27
+    Caption = 'Genero'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label12: TLabel
+    Left = 634
+    Top = 431
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label13: TLabel
+    Left = 556
+    Top = 493
+    Width = 111
+    Height = 27
+    Caption = 'Requisitos'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label14: TLabel
+    Left = 674
+    Top = 497
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label15: TLabel
+    Left = 556
+    Top = 245
+    Width = 155
+    Height = 27
+    Caption = 'Desenvolvedor'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object Label16: TLabel
+    Left = 714
+    Top = 247
+    Width = 8
+    Height = 16
+    Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Edit1: TEdit
-    Left = 741
-    Top = 318
-    Width = 295
-    Height = 25
+    Left = 559
+    Top = 147
+    Width = 225
+    Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
-    Left = 741
-    Top = 391
-    Width = 567
-    Height = 25
+    Left = 559
+    Top = 211
+    Width = 433
+    Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
-    Left = 741
-    Top = 466
-    Width = 159
-    Height = 25
-    TabOrder = 2
+    Left = 559
+    Top = 332
+    Width = 121
+    Height = 21
+    TabOrder = 3
   end
   object Button1: TButton
-    Left = 752
-    Top = 592
-    Width = 148
-    Height = 54
+    Left = 543
+    Top = 565
+    Width = 113
+    Height = 41
     Caption = 'Inserir'
-    TabOrder = 3
+    TabOrder = 7
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 936
-    Top = 602
-    Width = 115
-    Height = 44
+    Left = 672
+    Top = 565
+    Width = 113
+    Height = 41
     Caption = 'Descartar'
-    TabOrder = 4
+    TabOrder = 8
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 41
-    Top = 16
-    Width = 207
-    Height = 65
+    Left = 31
+    Top = 12
+    Width = 159
+    Height = 50
     Caption = '<< VOLTAR'
-    TabOrder = 5
+    TabOrder = 9
     OnClick = Button3Click
+  end
+  object Edit4: TEdit
+    Left = 559
+    Top = 396
+    Width = 121
+    Height = 21
+    TabOrder = 4
+  end
+  object Edit5: TEdit
+    Left = 559
+    Top = 460
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+  object Edit6: TEdit
+    Left = 559
+    Top = 524
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+  object Edit7: TEdit
+    Left = 559
+    Top = 275
+    Width = 225
+    Height = 21
+    TabOrder = 2
   end
   object MainMenu1: TMainMenu
     Top = 65528

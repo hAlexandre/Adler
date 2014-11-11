@@ -37,6 +37,18 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
+    Label9: TLabel;
+    Edit4: TEdit;
+    Label10: TLabel;
+    Label11: TLabel;
+    Edit5: TEdit;
+    Label12: TLabel;
+    Edit6: TEdit;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Edit7: TEdit;
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure eladeLogin1Click(Sender: TObject);
@@ -58,10 +70,19 @@ uses datamodule_jogos, Unit2, Unit1;
 {$R *.dfm}
 
 procedure TInserirJogo.Button2Click(Sender: TObject);
+var confirma : integer;
 begin
-  Edit1.Text:='';
-  Edit2.Text:='';
-  Edit3.Text:='';
+  confirma := MessageDlg('Deseja mesmo descartar os dados?',mtCustom, mbOKCancel, 0);
+   if confirma = mrOK then
+   begin
+    Edit1.Text:='';
+    Edit2.Text:='';
+    Edit3.Text:='';
+    Edit4.Text:='';
+    Edit5.Text:='';
+    Edit6.Text:='';
+    Edit7.Text:='';
+   end;
 end;
 
 procedure TInserirJogo.Button1Click(Sender: TObject);
@@ -71,10 +92,14 @@ begin
 
       BDJogos.ADOTable1.FieldByName('Nome').Value:=edit1.Text;
       BDJogos.ADOTable1.FieldByName('Descricao').Value:=edit2.Text;
+      BDJogos.ADOTable1.FieldByName('Desenvolvedor').Value:=edit7.Text;
       BDJogos.ADOTable1.FieldByName('Preco').Value:=StrToFloat(edit3.Text);
+      BDJogos.ADOTable1.FieldByName('Censura').Value:=edit4.Text;
+      BDJogos.ADOTable1.FieldByName('Genero').Value:=edit5.Text;
+      BDJogos.ADOTable1.FieldByName('Requisitos').Value:=edit6.Text;
   BDJogos.ADOTable1.Post;
   ShowMessage('Jogo inserido com sucesso');
-  Self.Destroy;
+  Self.DestroyHandle;
   TelaInicial.show;
 
 end;
@@ -91,10 +116,14 @@ confirma := MessageDlg('Deseja mesmo sair?',mtCustom, mbOKCancel, 0);
 end;
 
 procedure TInserirJogo.Button3Click(Sender: TObject);
-
+var confirma : integer;
 begin
-  TelaInicial.show;
-  Self.Hide;
+  confirma := MessageDlg('Deseja mesmo voltar?',mtCustom, mbOKCancel, 0);
+   if confirma = mrOK then
+   begin
+      TelaInicial.show;
+      Self.Hide;
+      end;
 end;
 
 procedure TInserirJogo.FormClose(Sender: TObject;
