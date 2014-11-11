@@ -77,11 +77,15 @@ TelaInicial.Show;
 end;
 
 procedure TForm_inserirfuncionario.Button3Click(Sender: TObject);
+var confirma : integer;
 begin
-Self.Destroy;
-TelaInicial.Show;
+  confirma := MessageDlg('Deseja mesmo voltar?',mtCustom, mbOKCancel, 0);
+   if confirma = mrOK then
+   begin
+      TelaInicial.show;
+      Self.Hide;
+      end;
 
-end;
 
 procedure TForm_inserirfuncionario.Button1Click(Sender: TObject);
 begin

@@ -1,6 +1,6 @@
 object AlterarUsuario: TAlterarUsuario
-  Left = 226
-  Top = 341
+  Left = 235
+  Top = 274
   Width = 1299
   Height = 585
   Caption = 'alterar usuario'
@@ -3288,7 +3288,7 @@ object AlterarUsuario: TAlterarUsuario
     Left = 589
     Top = 347
     Width = 225
-    Height = 25
+    Height = 21
     TabOrder = 0
   end
   object Button1: TButton
@@ -3357,7 +3357,7 @@ object AlterarUsuario: TAlterarUsuario
     Left = 642
     Top = 93
     Width = 121
-    Height = 25
+    Height = 21
     TabOrder = 3
     Visible = False
   end
@@ -3395,7 +3395,7 @@ object AlterarUsuario: TAlterarUsuario
     Left = 642
     Top = 184
     Width = 121
-    Height = 25
+    Height = 21
     TabOrder = 7
     Visible = False
   end
@@ -3412,7 +3412,7 @@ object AlterarUsuario: TAlterarUsuario
     Left = 642
     Top = 44
     Width = 121
-    Height = 25
+    Height = 21
     TabOrder = 9
     Visible = False
   end
@@ -3420,7 +3420,7 @@ object AlterarUsuario: TAlterarUsuario
     Left = 642
     Top = 134
     Width = 121
-    Height = 25
+    Height = 21
     TabOrder = 10
     Visible = False
   end

@@ -76,14 +76,15 @@ end;
 procedure TConsultarJogo.Button3Click(Sender: TObject);
 begin
     Edit2.Visible:=True;
-    Edit2.text := DBGrid1.DataSource.DataSet.FieldValues['Nome'];
+    Edit2.text := DBGrid1.DataSource.DataSet.FieldValues['Preco'];
     Button3.Visible:=False;
+    Button6.Visible:=False;
     DBGrid1.Visible:=False;
     Button4.Visible:=True;
     Button5.Visible:=True;
     Button1.Enabled:=False;
     Button2.Enabled:=False;
-    
+    Label2.Visible:=True;
 
 end;
 
@@ -145,7 +146,14 @@ Self.Destroy;
 end;
 
 procedure TConsultarJogo.Button6Click(Sender: TObject);
+var confirma : Integer;
 begin
+       confirma := MessageDlg('Confirmation',mtCustom, mbOKCancel, 0);
+       if confirma = mrCancel then
+        begin
+          exit;
+        end;
+        
 BDJogos.ADOTable1.open ;
        aux := DBGrid1.DataSource.DataSet.FieldValues['codigo'];
        if BDJogos.ADOTable1.Locate('codigo',aux,[])    then

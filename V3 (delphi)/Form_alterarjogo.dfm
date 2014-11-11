@@ -3180,8 +3180,8 @@ object ConsultarJogo: TConsultarJogo
     Caption = 'Aterar Registro'
   end
   object Label2: TLabel
-    Left = 1196
-    Top = 437
+    Left = 660
+    Top = 173
     Width = 61
     Height = 27
     Caption = 'Preco'
@@ -3278,16 +3278,16 @@ object ConsultarJogo: TConsultarJogo
     OnClick = Button3Click
   end
   object Edit2: TEdit
-    Left = 1193
-    Top = 468
+    Left = 657
+    Top = 204
     Width = 121
     Height = 21
     TabOrder = 4
     Visible = False
   end
   object Button4: TButton
-    Left = 1192
-    Top = 495
+    Left = 656
+    Top = 231
     Width = 120
     Height = 41
     Caption = 'Descartar altera'#231#245'es'
@@ -3296,8 +3296,8 @@ object ConsultarJogo: TConsultarJogo
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 1192
-    Top = 542
+    Left = 656
+    Top = 278
     Width = 121
     Height = 41
     Caption = 'Salvar altera'#231#245'es'
