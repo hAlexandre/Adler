@@ -36,7 +36,6 @@ type
     Image1: TImage;
     Label1: TLabel;
     Button2: TButton;
-    SpeedButton1: TSpeedButton;
     Label2: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);

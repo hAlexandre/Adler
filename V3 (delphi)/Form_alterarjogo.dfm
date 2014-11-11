@@ -1,8 +1,8 @@
 object ConsultarJogo: TConsultarJogo
-  Left = 6
-  Top = 321
-  Width = 1552
-  Height = 880
+  Left = 218
+  Top = 129
+  Width = 1378
+  Height = 780
   Caption = 'Altera Jogo'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -3171,13 +3171,6 @@ object ConsultarJogo: TConsultarJogo
     Font.Style = []
     ParentFont = False
     Transparent = True
-  end
-  object SpeedButton1: TSpeedButton
-    Left = 160
-    Top = 424
-    Width = 113
-    Height = 33
-    Caption = 'Aterar Registro'
   end
   object Label2: TLabel
     Left = 660
