@@ -55,6 +55,7 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -132,6 +133,9 @@ Edit1.Visible:=False;
     Label6.Visible:=True;
     Label7.Visible:=True;
     Label8.Visible:=False;
+    Label9.Visible:=True;
+    Label10.Visible:=True;
+    Label11.Visible:=True;
 end;
 
 procedure TForm_Consultar_Emrpesa.Button3Click(Sender: TObject);
@@ -210,6 +214,13 @@ confirma := MessageDlg('Deseja mesmo voltar?',mtCustom, mbOKCancel, 0);
           Self.Hide;
           TelaInicial.Show;
         end;
+end;
+
+procedure TForm_Consultar_Emrpesa.Button4Click(Sender: TObject);
+begin
+      Label8.Visible:=False;
+      Label8.Visible:=False;
+      Label8.Visible:=False;
 end;
 
 end.

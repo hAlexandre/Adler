@@ -7,47 +7,47 @@ object Consulta_FUncionarios: TConsulta_FUncionarios
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object Label1: TLabel
-    Left = 328
-    Top = -158
-    Width = 78
-    Height = 18
+    Left = 429
+    Top = -207
+    Width = 104
+    Height = 24
     Caption = 'Novo senha'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -20
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     Visible = False
   end
   object Label2: TLabel
-    Left = 328
-    Top = -109
-    Width = 99
-    Height = 18
+    Left = 429
+    Top = -143
+    Width = 133
+    Height = 24
     Caption = 'Novo endereco'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -20
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     Visible = False
   end
   object Image1: TImage
-    Left = -433
-    Top = -240
-    Width = 1461
-    Height = 741
+    Left = -566
+    Top = -314
+    Width = 2479
+    Height = 1283
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3186,14 +3186,14 @@ object Consulta_FUncionarios: TConsulta_FUncionarios
     Stretch = True
   end
   object Label7: TLabel
-    Left = 307
-    Top = -111
-    Width = 721
-    Height = 29
+    Left = 401
+    Top = -145
+    Width = 916
+    Height = 36
     Caption = 'Preencha os campos abaixo para alterar os dados do usu'#225'rio'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
@@ -3201,14 +3201,14 @@ object Consulta_FUncionarios: TConsulta_FUncionarios
     Visible = False
   end
   object Label3: TLabel
-    Left = 644
-    Top = 69
-    Width = 53
-    Height = 19
+    Left = 842
+    Top = 90
+    Width = 69
+    Height = 25
     Caption = 'Salario'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -3216,14 +3216,14 @@ object Consulta_FUncionarios: TConsulta_FUncionarios
     Visible = False
   end
   object Label4: TLabel
-    Left = 644
-    Top = 161
-    Width = 67
-    Height = 19
+    Left = 842
+    Top = 211
+    Width = 87
+    Height = 25
     Caption = 'Historico'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -3231,14 +3231,14 @@ object Consulta_FUncionarios: TConsulta_FUncionarios
     Visible = False
   end
   object Label5: TLabel
-    Left = 644
-    Top = 26
-    Width = 44
-    Height = 19
+    Left = 842
+    Top = 34
+    Width = 58
+    Height = 25
     Caption = 'Cargo'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -3246,14 +3246,14 @@ object Consulta_FUncionarios: TConsulta_FUncionarios
     Visible = False
   end
   object Label6: TLabel
-    Left = 644
-    Top = 118
-    Width = 68
-    Height = 19
+    Left = 842
+    Top = 154
+    Width = 90
+    Height = 25
     Caption = 'Endere'#231'o'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -3261,54 +3261,54 @@ object Consulta_FUncionarios: TConsulta_FUncionarios
     Visible = False
   end
   object SpeedButton1: TSpeedButton
-    Left = 381
-    Top = 314
-    Width = 98
-    Height = 25
+    Left = 386
+    Top = 395
+    Width = 128
+    Height = 32
     Caption = 'Alterar registro'
     Enabled = False
     OnClick = SpeedButton1Click
   end
   object Label8: TLabel
-    Left = 642
-    Top = 314
-    Width = 118
-    Height = 19
+    Left = 840
+    Top = 411
+    Width = 153
+    Height = 25
     Caption = 'Digite um nome'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Edit1: TEdit
-    Left = 589
-    Top = 347
-    Width = 225
+    Left = 770
+    Top = 454
+    Width = 294
     Height = 21
     TabOrder = 0
   end
   object Button1: TButton
-    Left = 644
-    Top = 387
-    Width = 105
-    Height = 57
+    Left = 842
+    Top = 506
+    Width = 137
+    Height = 75
     Caption = 'Pesquisar por nome'
     TabOrder = 1
     OnClick = Button1Click
   end
   object DBGrid1: TDBGrid
-    Left = 270
+    Left = 353
     Top = 0
-    Width = 750
-    Height = 293
+    Width = 981
+    Height = 383
     DataSource = DataSource1
     TabOrder = 2
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
-    TitleFont.Height = -11
+    TitleFont.Height = -14
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
     OnCellClick = DBGrid1CellClick
@@ -3356,79 +3356,79 @@ object Consulta_FUncionarios: TConsulta_FUncionarios
       end>
   end
   object Edit2: TEdit
-    Left = 642
-    Top = 45
-    Width = 121
+    Left = 840
+    Top = 59
+    Width = 158
     Height = 21
     TabOrder = 3
     Visible = False
   end
   object Button3: TButton
-    Left = 638
-    Top = 215
-    Width = 109
-    Height = 35
+    Left = 834
+    Top = 281
+    Width = 143
+    Height = 46
     Caption = 'Finalizar Altera'#231#245'es'
     TabOrder = 4
     Visible = False
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 632
-    Top = 264
-    Width = 121
-    Height = 25
+    Left = 826
+    Top = 345
+    Width = 159
+    Height = 33
     Caption = 'Descartar altera'#231#245'es'
     TabOrder = 5
     Visible = False
   end
   object Button5: TButton
-    Left = 495
-    Top = 314
-    Width = 104
-    Height = 24
+    Left = 543
+    Top = 395
+    Width = 136
+    Height = 31
     Caption = 'Excluir registro'
     Enabled = False
     TabOrder = 6
     OnClick = Button5Click
   end
   object Edit3: TEdit
-    Left = 642
-    Top = 96
-    Width = 121
+    Left = 840
+    Top = 126
+    Width = 158
     Height = 21
     TabOrder = 7
     Visible = False
   end
   object Button6: TButton
-    Left = 37
-    Top = -151
-    Width = 123
-    Height = 44
+    Left = 48
+    Top = -197
+    Width = 161
+    Height = 57
     Caption = '<< VOLTAR'
     TabOrder = 8
   end
   object Edit4: TEdit
-    Left = 642
-    Top = 140
-    Width = 121
+    Left = 840
+    Top = 183
+    Width = 158
     Height = 21
     TabOrder = 9
     Visible = False
   end
   object Edit5: TEdit
-    Left = 642
-    Top = 182
-    Width = 121
+    Left = 840
+    Top = 238
+    Width = 158
     Height = 21
     TabOrder = 10
     Visible = False
   end
   object Button2: TButton
-    Left = 44
-    Top = 24
-    Width = 145
-    Height = 37
+    Left = 58
+    Top = 31
+    Width = 189
+    Height = 49
     Caption = '<<Voltar'
     TabOrder = 11
     OnClick = Button2Click

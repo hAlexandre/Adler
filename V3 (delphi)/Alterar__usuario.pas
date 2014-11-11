@@ -122,7 +122,6 @@ end;
 
 procedure TAlterarUsuario.Button3Click(Sender: TObject);
 begin
-
              if edit2.Text <> edit5.Text then
               begin
                 ShowMessage('A nova senha não confere');
@@ -134,6 +133,8 @@ begin
                 ShowMessage('Nenhuma modificação foi feita');
                 exit;
               end;
+
+
 
   ADOQuery1.refresh;
   BDUsuarios.ADOTable1.Open;

@@ -7,52 +7,52 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
   OnClose = FormClose
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object Label1: TLabel
-    Left = 328
-    Top = -158
-    Width = 78
-    Height = 18
+    Left = 429
+    Top = -207
+    Width = 104
+    Height = 24
     Caption = 'Novo senha'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -20
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     Visible = False
   end
   object Label2: TLabel
-    Left = 328
-    Top = -109
-    Width = 99
-    Height = 18
+    Left = 429
+    Top = -143
+    Width = 133
+    Height = 24
     Caption = 'Novo endereco'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -20
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     Visible = False
   end
   object Label7: TLabel
-    Left = 307
-    Top = -111
-    Width = 721
-    Height = 29
+    Left = 401
+    Top = -145
+    Width = 916
+    Height = 36
     Caption = 'Preencha os campos abaixo para alterar os dados do usu'#225'rio'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
@@ -60,14 +60,14 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
     Visible = False
   end
   object Label3: TLabel
-    Left = 644
-    Top = 69
-    Width = 42
-    Height = 19
+    Left = 842
+    Top = 90
+    Width = 54
+    Height = 25
     Caption = 'Email'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -75,14 +75,14 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
     Visible = False
   end
   object Label5: TLabel
-    Left = 644
-    Top = 26
-    Width = 62
-    Height = 19
+    Left = 842
+    Top = 34
+    Width = 81
+    Height = 25
     Caption = 'Telefone'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -90,14 +90,14 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
     Visible = False
   end
   object Label6: TLabel
-    Left = 644
-    Top = 118
-    Width = 68
-    Height = 19
+    Left = 842
+    Top = 154
+    Width = 90
+    Height = 25
     Caption = 'Endere'#231'o'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -105,33 +105,33 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
     Visible = False
   end
   object Speedbutton3: TSpeedButton
-    Left = 381
-    Top = 314
-    Width = 98
-    Height = 25
+    Left = 498
+    Top = 411
+    Width = 128
+    Height = 32
     Caption = 'Alterar registro'
     Enabled = False
     OnClick = Speedbutton3Click
   end
   object Label8: TLabel
-    Left = 642
-    Top = 314
-    Width = 118
-    Height = 19
+    Left = 840
+    Top = 411
+    Width = 153
+    Height = 25
     Caption = 'Digite um nome'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Image1: TImage
-    Left = -433
-    Top = -240
-    Width = 1906
-    Height = 945
+    Left = -566
+    Top = -314
+    Width = 2492
+    Height = 1236
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3270,14 +3270,14 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
     Stretch = True
   end
   object Label9: TLabel
-    Left = 644
-    Top = 17
-    Width = 68
-    Height = 19
+    Left = 842
+    Top = 22
+    Width = 90
+    Height = 25
     Caption = 'Endere'#231'o'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -3285,14 +3285,14 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
     Visible = False
   end
   object Label10: TLabel
-    Left = 644
-    Top = 73
-    Width = 62
-    Height = 19
+    Left = 842
+    Top = 95
+    Width = 81
+    Height = 25
     Caption = 'Telefone'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -3300,14 +3300,14 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
     Visible = False
   end
   object Label11: TLabel
-    Left = 644
-    Top = 113
-    Width = 42
-    Height = 19
+    Left = 842
+    Top = 148
+    Width = 54
+    Height = 25
     Caption = 'Email'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -22
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
@@ -3315,110 +3315,111 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
     Visible = False
   end
   object SpeedButton1: TSpeedButton
-    Left = 381
-    Top = 314
-    Width = 98
-    Height = 25
+    Left = 498
+    Top = 411
+    Width = 128
+    Height = 32
     Caption = 'Alterar registro'
     Enabled = False
     OnClick = Speedbutton3Click
   end
   object Edit1: TEdit
-    Left = 589
-    Top = 347
-    Width = 225
+    Left = 770
+    Top = 454
+    Width = 294
     Height = 21
     TabOrder = 0
   end
   object Button1: TButton
-    Left = 644
-    Top = 387
-    Width = 105
-    Height = 57
+    Left = 842
+    Top = 506
+    Width = 137
+    Height = 75
     Caption = 'Pesquisar por nome'
     TabOrder = 1
     OnClick = Button1Click
   end
   object Edit2: TEdit
-    Left = 642
-    Top = 93
-    Width = 121
+    Left = 840
+    Top = 122
+    Width = 158
     Height = 21
     TabOrder = 2
     Visible = False
   end
   object Button3: TButton
-    Left = 638
-    Top = 167
-    Width = 109
-    Height = 35
+    Left = 834
+    Top = 218
+    Width = 143
+    Height = 46
     Caption = 'Finalizar Altera'#231#245'es'
     TabOrder = 3
     Visible = False
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 632
-    Top = 208
-    Width = 121
-    Height = 25
+    Left = 826
+    Top = 272
+    Width = 159
+    Height = 33
     Caption = 'Descartar altera'#231#245'es'
     TabOrder = 4
     Visible = False
+    OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 495
-    Top = 314
-    Width = 104
-    Height = 24
+    Left = 647
+    Top = 411
+    Width = 136
+    Height = 31
     Caption = 'Excluir registro'
     Enabled = False
     TabOrder = 5
     OnClick = Button5Click
   end
   object Button6: TButton
-    Left = 37
-    Top = -151
-    Width = 123
-    Height = 44
+    Left = 48
+    Top = -197
+    Width = 161
+    Height = 57
     Caption = '<< VOLTAR'
     TabOrder = 6
   end
   object Edit4: TEdit
-    Left = 642
-    Top = 44
-    Width = 121
+    Left = 840
+    Top = 58
+    Width = 158
     Height = 21
     TabOrder = 7
     Visible = False
   end
   object Edit5: TEdit
-    Left = 642
-    Top = 134
-    Width = 121
+    Left = 840
+    Top = 175
+    Width = 158
     Height = 21
     TabOrder = 8
     Visible = False
   end
   object Button2: TButton
-    Left = 44
-    Top = 24
-    Width = 145
-    Height = 37
+    Left = 58
+    Top = 31
+    Width = 189
+    Height = 49
     Caption = '<<Voltar'
     TabOrder = 9
     OnClick = Button2Click
   end
   object DBGrid1: TDBGrid
-    Left = 216
-    Top = 40
-    Width = 641
-    Height = 233
+    Left = 322
+    Top = 28
+    Width = 911
+    Height = 357
     DataSource = DataSource1
     TabOrder = 10
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
-    TitleFont.Height = -11
+    TitleFont.Height = -14
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
     OnCellClick = DBGrid1CellClick
@@ -3427,36 +3428,43 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
       item
         Expanded = False
         FieldName = 'Codigo'
+        Width = 127
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'Nome'
+        Width = 95
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'Razao_social'
+        Width = 129
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'CNPJ'
+        Width = 134
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'Endereco'
+        Width = 100
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'Telefone'
+        Width = 93
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'Email'
+        Width = 147
         Visible = True
       end>
   end
@@ -3497,7 +3505,6 @@ object Form_Consultar_Emrpesa: TForm_Consultar_Emrpesa
     end
   end
   object ADOQuery1: TADOQuery
-    Active = True
     Connection = Datamoduleempresas.ADOConnection1
     CursorType = ctStatic
     DataSource = Datamoduleempresas.DataSource1

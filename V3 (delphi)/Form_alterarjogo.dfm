@@ -1,26 +1,26 @@
 object ConsultarJogo: TConsultarJogo
-  Left = 218
-  Top = 129
-  Width = 1378
-  Height = 780
+  Left = -9
+  Top = -9
+  Width = 1938
+  Height = 1050
   Caption = 'Altera Jogo'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
   OnClose = FormClose
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object Image1: TImage
-    Left = 8
+    Left = 10
     Top = 0
-    Width = 1463
-    Height = 747
+    Width = 1914
+    Height = 977
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3159,60 +3159,60 @@ object ConsultarJogo: TConsultarJogo
     Stretch = True
   end
   object Label1: TLabel
-    Left = 532
-    Top = 61
-    Width = 435
-    Height = 27
+    Left = 696
+    Top = 80
+    Width = 543
+    Height = 33
     Caption = 'Preencha os Campos para alterar o Jogo'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label2: TLabel
-    Left = 660
-    Top = 173
-    Width = 61
-    Height = 27
+    Left = 863
+    Top = 226
+    Width = 77
+    Height = 33
     Caption = 'Preco'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Button1: TButton
-    Left = 632
-    Top = 593
-    Width = 105
-    Height = 56
+    Left = 826
+    Top = 775
+    Width = 138
+    Height = 74
     Caption = 'Pesquisar por nome'
     TabOrder = 0
     OnClick = Button1Click
   end
   object Edit1: TEdit
-    Left = 570
-    Top = 559
-    Width = 226
+    Left = 745
+    Top = 731
+    Width = 296
     Height = 21
     TabOrder = 2
   end
   object DBGrid1: TDBGrid
-    Left = 360
-    Top = 106
-    Width = 779
-    Height = 305
+    Left = 471
+    Top = 139
+    Width = 1018
+    Height = 398
     DataSource = DataSource1
     Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete]
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
-    TitleFont.Height = -11
+    TitleFont.Height = -14
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
     Columns = <
@@ -3262,56 +3262,56 @@ object ConsultarJogo: TConsultarJogo
       end>
   end
   object Button3: TButton
-    Left = 358
-    Top = 427
-    Width = 112
-    Height = 33
+    Left = 468
+    Top = 558
+    Width = 147
+    Height = 44
     Caption = 'Alterar registro'
     TabOrder = 3
     OnClick = Button3Click
   end
   object Edit2: TEdit
-    Left = 657
-    Top = 204
-    Width = 121
+    Left = 859
+    Top = 267
+    Width = 158
     Height = 21
     TabOrder = 4
     Visible = False
   end
   object Button4: TButton
-    Left = 656
-    Top = 231
-    Width = 120
-    Height = 41
+    Left = 858
+    Top = 302
+    Width = 157
+    Height = 54
     Caption = 'Descartar altera'#231#245'es'
     TabOrder = 5
     Visible = False
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 656
-    Top = 278
-    Width = 121
-    Height = 41
+    Left = 858
+    Top = 364
+    Width = 158
+    Height = 53
     Caption = 'Salvar altera'#231#245'es'
     TabOrder = 6
     Visible = False
     OnClick = Button5Click
   end
   object Button6: TButton
-    Left = 488
-    Top = 427
-    Width = 96
-    Height = 33
+    Left = 638
+    Top = 558
+    Width = 126
+    Height = 44
     Caption = 'Excluir registro'
     TabOrder = 7
     OnClick = Button6Click
   end
   object Button2: TButton
-    Left = 31
-    Top = 24
-    Width = 104
-    Height = 38
+    Left = 41
+    Top = 31
+    Width = 136
+    Height = 50
     Caption = '<< VOLTAR'
     TabOrder = 8
     OnClick = Button2Click
