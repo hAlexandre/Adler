@@ -1,9 +1,8 @@
 object InserirUsuario: TInserirUsuario
-  Left = 417
-  Top = 134
+  Left = 274
+  Top = 136
   Width = 1068
   Height = 600
-  VertScrollBar.Position = 234
   Caption = 'Inserir Usuario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -18,7 +17,7 @@ object InserirUsuario: TInserirUsuario
   TextHeight = 13
   object ImagemInserirusuario: TImage
     Left = -17
-    Top = -234
+    Top = 0
     Width = 1469
     Height = 759
     Picture.Data = {
@@ -3160,7 +3159,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label2: TLabel
     Left = 612
-    Top = 62
+    Top = 296
     Width = 66
     Height = 27
     Caption = 'Senha'
@@ -3174,7 +3173,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label1: TLabel
     Left = 612
-    Top = -44
+    Top = 190
     Width = 83
     Height = 27
     Caption = 'Usuario'
@@ -3188,7 +3187,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label3: TLabel
     Left = 612
-    Top = 10
+    Top = 244
     Width = 59
     Height = 27
     Caption = 'Nome'
@@ -3202,7 +3201,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label4: TLabel
     Left = 612
-    Top = 119
+    Top = 353
     Width = 58
     Height = 27
     Caption = 'Perfil'
@@ -3216,7 +3215,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label5: TLabel
     Left = 612
-    Top = 175
+    Top = 409
     Width = 99
     Height = 27
     Caption = 'Endereco'
@@ -3230,7 +3229,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label6: TLabel
     Left = 612
-    Top = 232
+    Top = 466
     Width = 40
     Height = 27
     Caption = 'CPF'
@@ -3244,7 +3243,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label7: TLabel
     Left = 369
-    Top = -109
+    Top = 125
     Width = 658
     Height = 29
     Caption = 'Preencha os campos abaixo para criar um novo usu'#225'rio'
@@ -3258,7 +3257,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label8: TLabel
     Left = 693
-    Top = -41
+    Top = 193
     Width = 8
     Height = 16
     Caption = '*'
@@ -3272,7 +3271,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label9: TLabel
     Left = 668
-    Top = 8
+    Top = 242
     Width = 8
     Height = 16
     Caption = '*'
@@ -3286,7 +3285,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label10: TLabel
     Left = 674
-    Top = 66
+    Top = 300
     Width = 8
     Height = 16
     Caption = '*'
@@ -3300,7 +3299,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label11: TLabel
     Left = 668
-    Top = 119
+    Top = 353
     Width = 8
     Height = 16
     Caption = '*'
@@ -3314,7 +3313,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label12: TLabel
     Left = 705
-    Top = 180
+    Top = 414
     Width = 8
     Height = 16
     Caption = '*'
@@ -3328,7 +3327,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label13: TLabel
     Left = 650
-    Top = 236
+    Top = 470
     Width = 8
     Height = 16
     Caption = '*'
@@ -3342,7 +3341,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label14: TLabel
     Left = 607
-    Top = 411
+    Top = 645
     Width = 8
     Height = 16
     Caption = '*'
@@ -3356,7 +3355,7 @@ object InserirUsuario: TInserirUsuario
   end
   object Label15: TLabel
     Left = 622
-    Top = 411
+    Top = 645
     Width = 100
     Height = 13
     Caption = 'Campos Obrigat'#243'rios'
@@ -3364,70 +3363,70 @@ object InserirUsuario: TInserirUsuario
   end
   object Edit1: TEdit
     Left = 612
-    Top = -13
+    Top = 221
     Width = 137
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 612
-    Top = 93
+    Top = 327
     Width = 137
     Height = 21
     TabOrder = 2
   end
   object Edit3: TEdit
     Left = 612
-    Top = 41
+    Top = 275
     Width = 137
     Height = 21
     TabOrder = 1
   end
   object Edit4: TEdit
     Left = 612
-    Top = 151
+    Top = 385
     Width = 137
     Height = 21
     TabOrder = 3
   end
   object Edit5: TEdit
     Left = 612
-    Top = 206
+    Top = 440
     Width = 137
     Height = 21
     TabOrder = 4
   end
   object Edit6: TEdit
     Left = 612
-    Top = 262
+    Top = 496
     Width = 137
     Height = 21
     TabOrder = 5
   end
   object Button1: TButton
     Left = 613
-    Top = 300
+    Top = 534
     Width = 136
     Height = 48
-    Caption = 'Inserir'
+    Caption = '&Inserir'
     TabOrder = 6
     OnClick = Button1Click
   end
   object Button2: TButton
     Left = 642
-    Top = 367
+    Top = 601
     Width = 75
     Height = 25
-    Caption = 'Descartar'
+    Caption = '&Descartar'
     TabOrder = 7
     OnClick = Button2Click
   end
   object Button3: TButton
     Left = 61
-    Top = -188
+    Top = 46
     Width = 148
     Height = 37
-    Caption = '<< VOLTAR'
+    Caption = '<< &VOLTAR'
     TabOrder = 8
     OnClick = eladelogin1Click
   end

@@ -86,7 +86,7 @@ begin
       Self.Hide;
       end;
 
-
+end;
 procedure TForm_inserirfuncionario.Button1Click(Sender: TObject);
 begin
 

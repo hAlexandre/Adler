@@ -1,8 +1,8 @@
 object Form_inserirfuncionario: TForm_inserirfuncionario
-  Left = 276
-  Top = 34
-  Width = 1552
-  Height = 880
+  Left = 274
+  Top = 147
+  Width = 1378
+  Height = 780
   Caption = 'INserirFuncionario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -3365,42 +3365,42 @@ object Form_inserirfuncionario: TForm_inserirfuncionario
     Left = 596
     Top = 197
     Width = 137
-    Height = 25
+    Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 596
     Top = 247
     Width = 137
-    Height = 25
+    Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
     Left = 596
     Top = 307
     Width = 137
-    Height = 25
+    Height = 21
     TabOrder = 2
   end
   object Edit4: TEdit
     Left = 596
     Top = 361
     Width = 137
-    Height = 25
+    Height = 21
     TabOrder = 3
   end
   object Edit5: TEdit
     Left = 596
     Top = 416
     Width = 137
-    Height = 25
+    Height = 21
     TabOrder = 4
   end
   object Edit6: TEdit
     Left = 596
     Top = 472
     Width = 137
-    Height = 25
+    Height = 21
     TabOrder = 5
   end
   object Button1: TButton
@@ -3408,7 +3408,7 @@ object Form_inserirfuncionario: TForm_inserirfuncionario
     Top = 510
     Width = 136
     Height = 48
-    Caption = 'Inserir'
+    Caption = '&Inserir'
     TabOrder = 6
     OnClick = Button1Click
   end
@@ -3417,7 +3417,7 @@ object Form_inserirfuncionario: TForm_inserirfuncionario
     Top = 577
     Width = 75
     Height = 25
-    Caption = 'Descartar'
+    Caption = '&Descartar'
     TabOrder = 7
   end
   object Button3: TButton
@@ -3425,7 +3425,7 @@ object Form_inserirfuncionario: TForm_inserirfuncionario
     Top = 46
     Width = 148
     Height = 37
-    Caption = '<< VOLTAR'
+    Caption = '<< &VOLTAR'
     TabOrder = 8
     OnClick = Button3Click
   end
