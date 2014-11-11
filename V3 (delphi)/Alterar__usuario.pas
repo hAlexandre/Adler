@@ -43,6 +43,7 @@ type
     Label6: TLabel;
     Edit5: TEdit;
     SpeedButton1: TSpeedButton;
+    Label8: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -53,6 +54,7 @@ type
     procedure DBGrid1CellClick(Column: TColumn);
     procedure DBGrid1Exit(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
+    procedure eladelogin1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -67,7 +69,7 @@ var
 implementation
 
 uses datamodule_jogos, datamodule_usuarios, Form_alterarjogo,
-  Form_alterarusuario, Form_funcionario, Form_usuario, Unit2;
+  Form_alterarusuario, Form_funcionario, Form_usuario, Unit2, Unit1;
 
 {$R *.dfm}
 
@@ -84,6 +86,7 @@ end;
 procedure TAlterarUsuario.Button2Click(Sender: TObject);
 begin
 
+    Edit1.Visible:=False;
     Edit2.Visible:=True;
     Edit3.Visible:=True;
     Edit4.Visible:=True;
@@ -98,13 +101,14 @@ begin
     Label2.Visible:=True;
     Button3.Visible:=True;
     Button4.Visible:=True;
-    Button1.Enabled:=False;
+    Button1.Visible:=False;
     Button5.Visible:=False;
     Label3.Visible:=True;
     Label4.Visible:=True;
     Label5.Visible:=True;
     Label6.Visible:=True;
     Label7.Visible:=False;
+    Label8.Visible:=False;
 
 
 end;
@@ -112,11 +116,15 @@ end;
 procedure TAlterarUsuario.Button3Click(Sender: TObject);
 begin
 
-
-
              if edit2.Text <> edit5.Text then
               begin
                 ShowMessage('A nova senha não confere');
+                exit;
+              end;
+
+              if (edit2.Text = '') AND (edit3.Text = '') then
+              begin
+                ShowMessage('Nenhuma modificação foi feita');
                 exit;
               end;
 
@@ -132,9 +140,6 @@ begin
           begin
             BDUsuarios.ADOTable1.FieldByName('senha').Value:=edit2.Text;
           end;
-
-
-
 
         if edit3.Text <> '' then
         begin
@@ -164,6 +169,7 @@ end;
 
 procedure TAlterarUsuario.Button4Click(Sender: TObject);
 begin
+    Edit1.Visible:=True;
     Edit2.Visible:=False;
     Edit3.Visible:=False;
     Edit4.Visible:=False;
@@ -176,17 +182,26 @@ begin
     Button3.Visible:=False;
     Button4.Visible:=False;
     Button5.Visible:=True;
-    Button1.Enabled:=True;
-    Label7.Visible:=True;
+    Button1.Visible:=True;
+    Label7.Visible:=False;
     Label6.Visible:=False;
     Label5.Visible:=False;
     Label3.Visible:=False;
     Label4.Visible:=False;
+    Label8.Visible:=True;
 end;
 
 procedure TAlterarUsuario.Button5Click(Sender: TObject);
+var confirma : Integer;
 begin
-                 BDUsuarios.ADOTable1.open ;
+       confirma := MessageDlg('Confirmation',mtCustom, mbOKCancel, 0);
+       if confirma = mrCancel then
+        begin
+          exit;
+        end;
+
+
+       BDUsuarios.ADOTable1.open ;
        aux := DBGrid1.DataSource.DataSet.FieldValues['codigo'];
        if BDUsuarios.ADOTable1.Locate('codigo',aux,[])    then
        begin
@@ -215,9 +230,8 @@ end;
 procedure TAlterarUsuario.DBGrid1CellClick(Column: TColumn);
 begin
 
-
     SpeedButton1.Enabled:=True;
-
+    Button5.Enabled:=True;
 
 end;
 
@@ -225,10 +239,12 @@ procedure TAlterarUsuario.DBGrid1Exit(Sender: TObject);
 begin
 
     SpeedButton1.Enabled:=False;
+    Button5.Enabled:=True;
 end;
 
 procedure TAlterarUsuario.SpeedButton1Click(Sender: TObject);
 begin
+    Edit1.Visible:=False;
     Edit2.Visible:=True;
     Edit3.Visible:=True;
     Edit4.Visible:=True;
@@ -244,13 +260,26 @@ begin
     Label2.Visible:=True;
     Button3.Visible:=True;
     Button4.Visible:=True;
-    Button1.Enabled:=False;
+    Button1.Visible:=False;
     Button5.Visible:=False;
     Label3.Visible:=True;
     Label4.Visible:=True;
     Label5.Visible:=True;
     Label6.Visible:=True;
-    Label7.Visible:=False;
+    Label7.Visible:=True;
+    Label8.Visible:=False;
+end;
+
+procedure TAlterarUsuario.eladelogin1Click(Sender: TObject);
+var confirma : integer;
+begin
+confirma := MessageDlg('Deseja mesmo sair?',mtCustom, mbOKCancel, 0);
+       if confirma = mrOK then
+        begin
+          Self.Hide;
+          TelaLogin.Show;
+        end;
+
 end;
 
 end.

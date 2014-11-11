@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Menus, StdCtrls, DB, ADODB, Grids, DBGrids;
+  Dialogs, Menus, StdCtrls, DB, ADODB, Grids, DBGrids, jpeg, ExtCtrls;
 
 type
   TConsultarJogo = class(TForm)
@@ -23,7 +23,6 @@ type
     RemoverFuncionrio1: TMenuItem;
     Button1: TButton;
     Edit1: TEdit;
-    Button2: TButton;
     DBGrid1: TDBGrid;
     ADOQuery1: TADOQuery;
     DataSource1: TDataSource;
@@ -33,6 +32,9 @@ type
     Button5: TButton;
     eladelogin1: TMenuItem;
     Button6: TButton;
+    Image1: TImage;
+    Label1: TLabel;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
@@ -40,6 +42,7 @@ type
     procedure eladelogin1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Button6Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -52,7 +55,7 @@ var
 
 implementation
 
-uses datamodule_jogos, Unit1;
+uses datamodule_jogos, Unit1, Unit2;
 
 {$R *.dfm}
 
@@ -120,9 +123,14 @@ begin
 end;
 
 procedure TConsultarJogo.eladelogin1Click(Sender: TObject);
+var confirma : integer;
 begin
-Self.Hide;
-TelaLogin.Show;
+confirma := MessageDlg('Deseja mesmo sair?',mtCustom, mbOKCancel, 0);
+       if confirma = mrOK then
+        begin
+          Self.Hide;
+          TelaLogin.Show;
+        end;
 end;
 
 procedure TConsultarJogo.FormClose(Sender: TObject;
@@ -141,6 +149,12 @@ BDJogos.ADOTable1.open ;
 
 
        end;
+end;
+
+procedure TConsultarJogo.Button2Click(Sender: TObject);
+begin
+  TelaInicial.show;
+  Self.Hide;
 end;
 
 end.

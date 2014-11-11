@@ -3,25 +3,24 @@ object TelaInicial: TTelaInicial
   Top = 40
   Width = 1181
   Height = 704
-  HorzScrollBar.Position = 287
   Caption = 'Tela Principal'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
   OnActivate = FormActivate
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object Background: TImage
-    Left = -304
+    Left = 2
     Top = 0
-    Width = 1469
-    Height = 747
+    Width = 1921
+    Height = 977
     Picture.Data = {
       0A544A504547496D616765E9580100FFD8FFE000104A46494600010100000100
       010000FFFE003B43524541544F523A2067642D6A7065672076312E3020287573
@@ -2786,70 +2785,70 @@ object TelaInicial: TTelaInicial
     Stretch = True
   end
   object Label1: TLabel
-    Left = 57
-    Top = 61
-    Width = 715
-    Height = 85
+    Left = 475
+    Top = 48
+    Width = 944
+    Height = 114
     Caption = 'Bem Vindo ao SVOJ'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -61
+    Font.Height = -80
     Font.Name = 'Gill Sans Ultra Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label2: TLabel
-    Left = -145
-    Top = 202
-    Width = 320
-    Height = 38
+    Left = 210
+    Top = 232
+    Width = 434
+    Height = 51
     Caption = 'Usu'#225'rios do Sistema'
     Font.Charset = ANSI_CHARSET
     Font.Color = clRed
-    Font.Height = -31
+    Font.Height = -42
     Font.Name = 'Verdana'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label3: TLabel
-    Left = 387
-    Top = 202
-    Width = 87
-    Height = 38
+    Left = 906
+    Top = 232
+    Width = 117
+    Height = 51
     Caption = 'Jogos'
     Font.Charset = ANSI_CHARSET
     Font.Color = clRed
-    Font.Height = -31
+    Font.Height = -42
     Font.Name = 'Verdana'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label4: TLabel
-    Left = 755
-    Top = 208
-    Width = 198
-    Height = 38
+    Left = 1387
+    Top = 240
+    Width = 266
+    Height = 51
     Caption = 'Funcion'#225'rios'
     Font.Charset = ANSI_CHARSET
     Font.Color = clRed
-    Font.Height = -31
+    Font.Height = -42
     Font.Name = 'Verdana'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Button1: TButton
-    Left = -96
-    Top = 304
-    Width = 215
-    Height = 68
+    Left = 274
+    Top = 366
+    Width = 282
+    Height = 88
     Caption = 'Inserir Usu'#225'rio'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -20
+    Font.Height = -27
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -2857,14 +2856,14 @@ object TelaInicial: TTelaInicial
     OnClick = Inserirusurio1Click
   end
   object Button2: TButton
-    Left = -96
-    Top = 426
-    Width = 215
-    Height = 68
+    Left = 274
+    Top = 525
+    Width = 282
+    Height = 89
     Caption = 'Consultar Usu'#225'rio'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -20
+    Font.Height = -27
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -2872,14 +2871,14 @@ object TelaInicial: TTelaInicial
     OnClick = AlterarUsurio1Click
   end
   object Button3: TButton
-    Left = 326
-    Top = 304
-    Width = 215
-    Height = 68
+    Left = 826
+    Top = 366
+    Width = 281
+    Height = 88
     Caption = 'Inserir Jogo'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -20
+    Font.Height = -27
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -2887,14 +2886,14 @@ object TelaInicial: TTelaInicial
     OnClick = Inserirjogo1Click
   end
   object Button4: TButton
-    Left = 326
-    Top = 426
-    Width = 215
-    Height = 68
+    Left = 826
+    Top = 525
+    Width = 281
+    Height = 89
     Caption = 'Consultar Jogo'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -20
+    Font.Height = -27
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -2902,14 +2901,14 @@ object TelaInicial: TTelaInicial
     OnClick = Alterarjogo1Click
   end
   object Button5: TButton
-    Left = 748
-    Top = 304
-    Width = 215
-    Height = 68
+    Left = 1378
+    Top = 366
+    Width = 281
+    Height = 88
     Caption = 'Inserir Funcion'#225'rio'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -20
+    Font.Height = -27
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -2917,24 +2916,24 @@ object TelaInicial: TTelaInicial
     OnClick = Button5Click
   end
   object Button6: TButton
-    Left = 748
-    Top = 426
-    Width = 215
-    Height = 68
+    Left = 1378
+    Top = 525
+    Width = 281
+    Height = 89
     Caption = 'Consultar Funcion'#225'rio'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -20
+    Font.Height = -27
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     TabOrder = 5
   end
   object Button7: TButton
-    Left = 337
-    Top = 682
-    Width = 190
-    Height = 50
+    Left = 833
+    Top = 844
+    Width = 248
+    Height = 65
     Caption = 'Sair do Sistema'
     TabOrder = 6
     OnClick = eladelogin1Click

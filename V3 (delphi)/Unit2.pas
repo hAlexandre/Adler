@@ -83,9 +83,14 @@ ConsultarJogo.Show;
 end;
 
 procedure TTelaInicial.eladelogin1Click(Sender: TObject);
+var confirma : integer;
 begin
-Self.Hide;
-TelaLogin.Show;
+confirma := MessageDlg('Deseja mesmo sair?',mtCustom, mbOKCancel, 0);
+       if confirma = mrOK then
+        begin
+          Self.Hide;
+          TelaLogin.Show;
+        end;
 end;
 
 procedure TTelaInicial.Inserirusurio1Click(Sender: TObject);

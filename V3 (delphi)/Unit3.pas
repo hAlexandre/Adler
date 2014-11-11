@@ -80,9 +80,14 @@ begin
 end;
 
 procedure TInserirJogo.eladeLogin1Click(Sender: TObject);
+var confirma : integer;
 begin
-Self.Hide;
-TelaLogin.Show;
+confirma := MessageDlg('Deseja mesmo sair?',mtCustom, mbOKCancel, 0);
+       if confirma = mrOK then
+        begin
+          Self.Hide;
+          TelaLogin.Show;
+        end;
 end;
 
 procedure TInserirJogo.Button3Click(Sender: TObject);

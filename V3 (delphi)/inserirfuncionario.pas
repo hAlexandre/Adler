@@ -49,8 +49,8 @@ type
     eladelogin1: TMenuItem;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Button3Click(Sender: TObject);
-    procedure RadioButton1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure eladelogin1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -83,13 +83,6 @@ TelaInicial.Show;
 
 end;
 
-procedure TForm_inserirfuncionario.RadioButton1Click(Sender: TObject);
-begin
-Edit7.Visible:=True;
-Label17.Visible:=True;
-
-end;
-
 procedure TForm_inserirfuncionario.Button1Click(Sender: TObject);
 begin
 
@@ -110,6 +103,17 @@ begin
 
 
 
+end;
+
+procedure TForm_inserirfuncionario.eladelogin1Click(Sender: TObject);
+var confirma : integer;
+begin
+confirma := MessageDlg('Deseja mesmo sair?',mtCustom, mbOKCancel, 0);
+       if confirma = mrOK then
+        begin
+          Self.Hide;
+          TelaLogin.Show;
+        end;
 end;
 
 end.

@@ -66,13 +66,24 @@ uses Unit2, datamodule_usuarios, datamodule_jogos;
 {$R *.dfm}
 
 procedure TInserirUsuario.eladelogin1Click(Sender: TObject);
+var confirma : integer;
 begin
-  TelaInicial.show;
-  Self.Hide;
+confirma := MessageDlg('Deseja mesmo sair?',mtCustom, mbOKCancel, 0);
+       if confirma = mrOK then
+        begin
+          Self.Hide;
+          TelaLogin.Show;
+        end;
 end;
 
 procedure TInserirUsuario.Button1Click(Sender: TObject);
 begin
+
+  if (edit1.Text = '') OR (edit2.Text = '') OR (edit3.Text = '') OR (edit4.Text = '') OR (edit5.Text = '') OR (edit6.Text = '') then
+  begin
+    ShowMessage ('Campos Incompletos');
+    exit;
+  end;
 
   BDUsuarios.ADOTable1.Open;
   BDUsuarios.ADOTable1.Insert;

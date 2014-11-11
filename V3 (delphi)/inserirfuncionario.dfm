@@ -1,25 +1,25 @@
 object Form_inserirfuncionario: TForm_inserirfuncionario
-  Left = -8
-  Top = -8
+  Left = 276
+  Top = 34
   Width = 1552
   Height = 880
   Caption = 'INserirFuncionario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
   OnClose = FormClose
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object ImagemInserirusuario: TImage
-    Left = -73
-    Top = -48
-    Width = 1554
-    Height = 817
+    Left = -95
+    Top = -63
+    Width = 2032
+    Height = 1069
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3158,273 +3158,273 @@ object Form_inserirfuncionario: TForm_inserirfuncionario
     Stretch = True
   end
   object Label2: TLabel
-    Left = 596
-    Top = 272
-    Width = 76
-    Height = 27
+    Left = 779
+    Top = 356
+    Width = 93
+    Height = 33
     Caption = 'Salario'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label1: TLabel
-    Left = 596
-    Top = 166
-    Width = 59
-    Height = 27
+    Left = 779
+    Top = 217
+    Width = 74
+    Height = 33
     Caption = 'Nome'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label3: TLabel
-    Left = 596
-    Top = 220
-    Width = 63
-    Height = 27
+    Left = 779
+    Top = 288
+    Width = 79
+    Height = 33
     Caption = 'Cargo'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label4: TLabel
-    Left = 596
-    Top = 329
-    Width = 40
-    Height = 27
+    Left = 779
+    Top = 430
+    Width = 51
+    Height = 33
     Caption = 'CPF'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label5: TLabel
-    Left = 596
-    Top = 385
-    Width = 99
-    Height = 27
+    Left = 779
+    Top = 503
+    Width = 123
+    Height = 33
     Caption = 'Endereco'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label6: TLabel
-    Left = 596
-    Top = 442
-    Width = 97
-    Height = 27
+    Left = 779
+    Top = 578
+    Width = 120
+    Height = 33
     Caption = 'Historico'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Britannic Bold'
     Font.Style = []
     ParentFont = False
     Transparent = True
   end
   object Label7: TLabel
-    Left = 369
-    Top = 125
-    Width = 710
-    Height = 29
+    Left = 483
+    Top = 163
+    Width = 900
+    Height = 36
     Caption = 'Preencha os campos abaixo para criar um novo Funcion'#225'rio'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -24
+    Font.Height = -30
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label8: TLabel
-    Left = 661
-    Top = 177
-    Width = 8
-    Height = 16
+    Left = 864
+    Top = 231
+    Width = 11
+    Height = 21
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -13
+    Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label9: TLabel
-    Left = 668
-    Top = 226
-    Width = 8
-    Height = 16
+    Left = 874
+    Top = 296
+    Width = 11
+    Height = 21
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -13
+    Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label10: TLabel
-    Left = 674
-    Top = 276
-    Width = 8
-    Height = 16
+    Left = 881
+    Top = 361
+    Width = 11
+    Height = 21
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -13
+    Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label11: TLabel
-    Left = 644
-    Top = 337
-    Width = 8
-    Height = 16
+    Left = 842
+    Top = 441
+    Width = 11
+    Height = 21
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -13
+    Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label12: TLabel
-    Left = 705
-    Top = 414
-    Width = 8
-    Height = 16
+    Left = 922
+    Top = 541
+    Width = 11
+    Height = 21
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -13
+    Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label13: TLabel
-    Left = 698
-    Top = 390
-    Width = 8
-    Height = 16
+    Left = 913
+    Top = 510
+    Width = 11
+    Height = 21
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -13
+    Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label14: TLabel
-    Left = 607
-    Top = 621
-    Width = 8
-    Height = 16
+    Left = 794
+    Top = 812
+    Width = 11
+    Height = 21
     Caption = '*'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
-    Font.Height = -13
+    Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
   end
   object Label15: TLabel
-    Left = 622
-    Top = 621
-    Width = 100
-    Height = 13
+    Left = 813
+    Top = 812
+    Width = 128
+    Height = 17
     Caption = 'Campos Obrigat'#243'rios'
     Transparent = True
   end
   object Edit1: TEdit
-    Left = 596
-    Top = 197
-    Width = 137
+    Left = 779
+    Top = 258
+    Width = 180
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
-    Left = 596
-    Top = 247
-    Width = 137
+    Left = 779
+    Top = 323
+    Width = 180
     Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
-    Left = 596
-    Top = 307
-    Width = 137
+    Left = 779
+    Top = 401
+    Width = 180
     Height = 21
     TabOrder = 2
   end
   object Edit4: TEdit
-    Left = 596
-    Top = 361
-    Width = 137
+    Left = 779
+    Top = 472
+    Width = 180
     Height = 21
     TabOrder = 3
   end
   object Edit5: TEdit
-    Left = 596
-    Top = 416
-    Width = 137
+    Left = 779
+    Top = 544
+    Width = 180
     Height = 21
     TabOrder = 4
   end
   object Edit6: TEdit
-    Left = 596
-    Top = 472
-    Width = 137
+    Left = 779
+    Top = 617
+    Width = 180
     Height = 21
     TabOrder = 5
   end
   object Button1: TButton
-    Left = 597
-    Top = 510
-    Width = 136
-    Height = 48
+    Left = 781
+    Top = 667
+    Width = 178
+    Height = 63
     Caption = 'Inserir'
     TabOrder = 6
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 626
-    Top = 577
-    Width = 75
-    Height = 25
+    Left = 819
+    Top = 755
+    Width = 98
+    Height = 32
     Caption = 'Descartar'
     TabOrder = 7
   end
   object Button3: TButton
-    Left = 61
-    Top = 46
-    Width = 148
-    Height = 37
+    Left = 80
+    Top = 60
+    Width = 193
+    Height = 49
     Caption = '<< VOLTAR'
     TabOrder = 8
     OnClick = Button3Click
@@ -3469,6 +3469,7 @@ object Form_inserirfuncionario: TForm_inserirfuncionario
     end
     object eladelogin1: TMenuItem
       Caption = 'Tela de login'
+      OnClick = eladelogin1Click
     end
   end
 end

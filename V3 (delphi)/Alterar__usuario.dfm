@@ -1,9 +1,9 @@
 object AlterarUsuario: TAlterarUsuario
-  Left = 380
-  Top = 212
-  Width = 1304
+  Left = 338
+  Top = 235
+  Width = 1299
   Height = 585
-  VertScrollBar.Position = 81
+  VertScrollBar.Position = 237
   Caption = 'alterar usuario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -19,7 +19,7 @@ object AlterarUsuario: TAlterarUsuario
   TextHeight = 17
   object Label1: TLabel
     Left = 429
-    Top = -50
+    Top = -206
     Width = 104
     Height = 24
     Caption = 'Novo senha'
@@ -33,7 +33,7 @@ object AlterarUsuario: TAlterarUsuario
   end
   object Label2: TLabel
     Left = 429
-    Top = 13
+    Top = -143
     Width = 133
     Height = 24
     Caption = 'Novo endereco'
@@ -47,9 +47,9 @@ object AlterarUsuario: TAlterarUsuario
   end
   object Image1: TImage
     Left = 0
-    Top = -81
-    Width = 1921
-    Height = 985
+    Top = -237
+    Width = 1911
+    Height = 969
     Picture.Data = {
       0A544A504547496D6167659B870100FFD8FFE000104A46494600010100000100
       010000FFDB0043000403030303020403030304040405060A06060505060C0809
@@ -3189,10 +3189,10 @@ object AlterarUsuario: TAlterarUsuario
   end
   object Label7: TLabel
     Left = 514
-    Top = -61
-    Width = 835
+    Top = -145
+    Width = 916
     Height = 36
-    Caption = 'Preencha os campos abaixo para criar um novo usu'#225'rio'
+    Caption = 'Preencha os campos abaixo para alterar os dados do usu'#225'rio'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -30
@@ -3200,10 +3200,11 @@ object AlterarUsuario: TAlterarUsuario
     Font.Style = [fsBold]
     ParentFont = False
     Transparent = True
+    Visible = False
   end
   object Label3: TLabel
-    Left = 848
-    Top = 39
+    Left = 832
+    Top = 59
     Width = 117
     Height = 26
     Caption = 'Nova Senha'
@@ -3217,8 +3218,8 @@ object AlterarUsuario: TAlterarUsuario
     Visible = False
   end
   object Label4: TLabel
-    Left = 848
-    Top = 159
+    Left = 832
+    Top = 179
     Width = 92
     Height = 26
     Caption = 'Endere'#231'o'
@@ -3232,11 +3233,11 @@ object AlterarUsuario: TAlterarUsuario
     Visible = False
   end
   object Label5: TLabel
-    Left = 608
-    Top = 7
-    Width = 131
+    Left = 832
+    Top = 3
+    Width = 119
     Height = 26
-    Caption = 'Senha Antiga'
+    Caption = 'Senha Atual'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -23
@@ -3247,8 +3248,8 @@ object AlterarUsuario: TAlterarUsuario
     Visible = False
   end
   object Label6: TLabel
-    Left = 848
-    Top = 103
+    Left = 832
+    Top = 123
     Width = 232
     Height = 26
     Caption = 'Confirme a nova senha'
@@ -3262,24 +3263,38 @@ object AlterarUsuario: TAlterarUsuario
     Visible = False
   end
   object SpeedButton1: TSpeedButton
-    Left = 424
-    Top = 432
+    Left = 456
+    Top = 316
     Width = 129
     Height = 33
     Caption = 'Alterar registro'
     Enabled = False
     OnClick = SpeedButton1Click
   end
+  object Label8: TLabel
+    Left = 840
+    Top = 411
+    Width = 158
+    Height = 26
+    Caption = 'Digite um nome'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -23
+    Font.Name = 'Britannic Bold'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
   object Edit1: TEdit
-    Left = 10
-    Top = 34
+    Left = 770
+    Top = 454
     Width = 295
     Height = 25
     TabOrder = 0
   end
   object Button1: TButton
-    Left = 10
-    Top = 86
+    Left = 842
+    Top = 506
     Width = 138
     Height = 75
     Caption = 'Pesquisar por nome'
@@ -3287,10 +3302,10 @@ object AlterarUsuario: TAlterarUsuario
     OnClick = Button1Click
   end
   object DBGrid1: TDBGrid
-    Left = 405
-    Top = 264
-    Width = 524
-    Height = 157
+    Left = 453
+    Top = -84
+    Width = 980
+    Height = 384
     DataSource = DataSource1
     Enabled = False
     TabOrder = 2
@@ -3305,57 +3320,61 @@ object AlterarUsuario: TAlterarUsuario
       item
         Expanded = False
         FieldName = 'Codigo'
+        Width = 76
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'nome'
-        Width = 63
+        Width = 163
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'usario'
+        Width = 161
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'perfil'
+        Width = 133
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'endereco'
-        Width = 56
+        Width = 246
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'cpf'
+        Width = 190
         Visible = True
       end>
   end
   object Edit2: TEdit
-    Left = 845
-    Top = 70
+    Left = 829
+    Top = 90
     Width = 158
     Height = 25
     TabOrder = 3
     Visible = False
   end
   object Button3: TButton
-    Left = 778
-    Top = 222
-    Width = 117
-    Height = 33
-    Caption = 'Salvar altera'#231#245'es'
+    Left = 834
+    Top = 250
+    Width = 143
+    Height = 46
+    Caption = 'Finalizar Altera'#231#245'es'
     TabOrder = 4
     Visible = False
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 914
-    Top = 222
+    Left = 826
+    Top = 314
     Width = 159
     Height = 33
     Caption = 'Descartar altera'#231#245'es'
@@ -3364,17 +3383,18 @@ object AlterarUsuario: TAlterarUsuario
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 586
-    Top = 432
+    Left = 626
+    Top = 316
     Width = 137
     Height = 32
     Caption = 'Excluir registro'
+    Enabled = False
     TabOrder = 6
     OnClick = Button5Click
   end
   object Edit3: TEdit
-    Left = 845
-    Top = 189
+    Left = 829
+    Top = 209
     Width = 158
     Height = 25
     TabOrder = 7
@@ -3382,7 +3402,7 @@ object AlterarUsuario: TAlterarUsuario
   end
   object Button6: TButton
     Left = 48
-    Top = -41
+    Top = -197
     Width = 161
     Height = 57
     Caption = '<< VOLTAR'
@@ -3390,16 +3410,16 @@ object AlterarUsuario: TAlterarUsuario
     OnClick = Button6Click
   end
   object Edit4: TEdit
-    Left = 605
-    Top = 30
+    Left = 829
+    Top = 26
     Width = 158
     Height = 25
     TabOrder = 9
     Visible = False
   end
   object Edit5: TEdit
-    Left = 845
-    Top = 134
+    Left = 829
+    Top = 154
     Width = 158
     Height = 25
     TabOrder = 10
@@ -3439,6 +3459,7 @@ object AlterarUsuario: TAlterarUsuario
     end
     object eladelogin1: TMenuItem
       Caption = 'Tela de login'
+      OnClick = eladelogin1Click
     end
   end
   object ADOQuery1: TADOQuery
